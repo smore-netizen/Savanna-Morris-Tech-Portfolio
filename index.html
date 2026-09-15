@@ -719,67 +719,77 @@ footer span{color:var(--gold)}
 
 <hr class="rule"/>
 
-<section class="section testi-section">
-  <div class="s-label">What Others Say</div>
-  <div class="s-title">Testimonials</div>
-  <div class="testi-grid">
+<section class="section testi-section"> 
+    <div class="s-label">What Others Say</div> 
+    <div class="s-title">Testimonials</div> 
+    
+    <div class="carousel-container"> 
+        <!-- Navigation Buttons --> 
+        <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous testimonial">❮</button> 
+        
+        <div class="testi-grid"> 
+            <!-- Card 1 --> 
+            <div class="testi-card active"> 
+                <div class="testi-quote">"Savanna was an outstanding summer intern whose curiosity, initiative, and strong communication skills made an immediate impact. She quickly took ownership of strategic communications projects, including developing data-driven go-to-market messaging frameworks, and consistently delivered thoughtful, well-researched work. She took the lead on scoping and vetting new enterprise communications platforms and made data-informed recommendations based on her findings. Savanna is an excellent writer, a confident presenter, and always eager to learn, ask insightful questions, and take on new challenges. She brings both analytical rigor and creativity to her work."</div> 
+                <div class="testi-person"> 
+                    <div class="testi-initials">DK</div> 
+                    <div> 
+                        <div class="testi-name">Debbie Kruger</div> 
+                        <div class="testi-role">Global Communications &amp; Social Impact at Cloudera<br>Strategic Program Director</div> 
+                        <div class="testi-context">Direct Manager · Cloudera Internship · June 2026</div> 
+                    </div> 
+                </div> 
+            </div> 
 
-    <div class="testi-card">
-      <div class="testi-quote">"Savanna was an outstanding summer intern whose curiosity, initiative, and strong communication skills made an immediate impact. She quickly took ownership of strategic communications projects, including developing data-driven go-to-market messaging frameworks, and consistently delivered thoughtful, well-researched work. She took the lead on scoping and vetting new enterprise communications platforms and made data-informed recommendations based on her findings. Savanna is an excellent writer, a confident presenter, and always eager to learn, ask insightful questions, and take on new challenges. She brings both analytical rigor and creativity to her work."</div>
-      <div class="testi-person">
-        <div class="testi-initials">DK</div>
-        <div>
-          <div class="testi-name">Debbie Kruger</div>
-          <div class="testi-role">Global Communications &amp; Social Impact at Cloudera<br>Strategic Program Director</div>
-          <div class="testi-context">Direct Manager · Cloudera Internship · June 2026</div>
-        </div>
-      </div>
-    </div>
+            <!-- Card 2 --> 
+            <div class="testi-card"> 
+                <div class="testi-quote">"Savanna stood out in my classes as an exceptionally focused, perceptive, and participative student. She possesses a rare combination of deep analytical focus and the ability to step back, gain perspective, and accurately read both people and complex dynamics. Beyond her academic excellence, these traits translate into the business world, where she could naturally inspire colleagues and drive collaborative success. I am confident her blend of strategic insight and emotional intelligence will make her an asset to any organization."</div> 
+                <div class="testi-person"> 
+                    <div class="testi-initials">PF</div> 
+                    <div> 
+                        <div class="testi-name">Patricio Fay</div> 
+                        <div class="testi-role">Professor, IAE Business School<br>Buenos Aires, Argentina</div> 
+                        <div class="testi-context">Academic Instructor · Argentina Global Practicum · June 2026</div> 
+                    </div> 
+                </div> 
+            </div> 
 
-    <div class="testi-card">
-      <div class="testi-quote">"Savanna stood out in my classes as an exceptionally focused, perceptive, and participative student. She possesses a rare combination of deep analytical focus and the ability to step back, gain perspective, and accurately read both people and complex dynamics. Beyond her academic excellence, these traits translate into the business world, where she could naturally inspire colleagues and drive collaborative success. I am confident her blend of strategic insight and emotional intelligence will make her an asset to any organization."</div>
-      <div class="testi-person">
-        <div class="testi-initials">PF</div>
-        <div>
-          <div class="testi-name">Patricio Fay</div>
-          <div class="testi-role">Professor, IAE Business School<br>Buenos Aires, Argentina</div>
-          <div class="testi-context">Academic Instructor · Argentina Global Practicum · June 2026</div>
-        </div>
-      </div>
-    </div>
+            <!-- Card 3 --> 
+            <div class="testi-card"> 
+                <div class="testi-quote">"Savanna was an absolute pleasure to work with during her time at Cloudera! What sets Savanna apart is her incredible strategic thinking and executive presence; she even engineered a GTM deployment framework that was presented directly to our CMO. She seamlessly managed cross-functional communications across 5+ executive stakeholders and brought a highly analytical, data-driven mindset to our digital marketing metrics. Savanna is sharp, proactive, and naturally steps into leadership roles. Any GTM or product marketing team would be incredibly lucky to have her talent!"</div> 
+                <div class="testi-person"> 
+                    <div class="testi-initials">KC</div> <!-- Corrected Initials -->
+                    <div> 
+                        <div class="testi-name">Katie Comstock</div> 
+                        <div class="testi-role">Global Communications<br>Communications Coordinator & Copy Editor</div> 
+                        <div class="testi-context">Co-worker · Cloudera Internship · July 2026</div> 
+                    </div> 
+                </div> 
+            </div> 
 
-       <div class="testi-card">
-      <div class="testi-quote">"Savanna was an absolute pleasure to work with during her time at Cloudera! What sets Savanna apart is her incredible strategic thinking and executive presence; she even engineered a GTM deployment framework that was presented directly to our CMO. She seamlessly managed cross-functional communications across 5+ executive stakeholders and brought a highly analytical, data-driven mindset to our digital marketing metrics. Savanna is sharp, proactive, and naturally steps into leadership roles. Any GTM or product marketing team would be incredibly lucky to have her talent!"</div>
-      <div class="testi-person">
-        <div class="testi-initials">PF</div>
-        <div>
-          <div class="testi-name">Katie Comstock</div>
-          <div class="testi-role">Global Communications<br>Communications Coordinator & Copy Editor</div>
-          <div class="testi-context">Co-worker · Cloudera Internship · July 2026</div>
-        </div>
-      </div>
-    </div>
+            <!-- Card 4 --> 
+            <div class="testi-card"> 
+                <div class="testi-quote">"Because I was so impressed with Savanna, I invited her to join our Speech Lab as a public speaking tutor. I wanted someone I could trust to represent our program well and to encourage students who come feeling anxious or uncertain about public speaking. This position requires someone who will help put students at ease, listen with patience, and offer thoughtful feedback. Savanna excelled in this role of helping others to find the confidence needed to improve on their communication skills. What I appreciate most about Savanna is who she is as a person. She is someone of exceptional character—honest, trustworthy, compassionate, and dependable..."</div> 
+                <div class="testi-person"> 
+                    <div class="testi-initials">GD</div> <!-- Corrected Initials -->
+                    <div> 
+                        <div class="testi-name">Gregory Daum</div> 
+                        <div class="testi-role">Professor, Pepperdine University<br>Pepperdine Communication/Religion Division</div> 
+                        <div class="testi-context">Direct Manager · Speech Lab Specialist · August 2026</div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> <!-- Closes testi-grid -->
 
-    <div class="testi-card">
-      <div class="testi-quote">"Because I was so impressed with Savanna, I invited her to join our Speech Lab as a public speaking tutor. I wanted someone I could trust to represent our program well and to encourage students who come feeling anxious or uncertain about public speaking. This position requires someone who will help put students at ease, listen with patience, and offer thoughtful feedback. Savanna excelled in this role of helping others to find the confidence needed to improve on their communication skills. What I appreciate most about Savanna is who she is as a person. She is someone of exceptional character—honest, trustworthy, compassionate, and dependable. She follows through on her commitments, treats others with kindness and respect, and carries herself with humility and grace. Those qualities cannot be taught, and they are every bit as important as talent or intelligence. I recommend Savanna Morris with my highest confidence and without reservation. Any employer would be fortunate to have someone with her intelligence, dedication, and character on their team. I have every confidence that she will continue to grow, lead, and make a meaningful difference wherever her career takes her. It has been a privilege to watch her develop, and I look forward to seeing all that she will accomplish in the years ahead."</div>
-      <div class="testi-person">
-        <div class="testi-initials">PF</div>
-        <div>
-          <div class="testi-name">Gregory Daum</div>
-          <div class="testi-role">Professor, Pepperdine University<br>Pepperdine Communication/Religion Division</div>
-          <div class="testi-context">Direct Manager · Speech Lab Specialist · August 2026</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
+        <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next testimonial">❯</button> 
+    </div> <!-- Closes carousel-container -->
 </section>
 
 <hr class="rule"/>
 
 <section class="contact-section" id="contact">
   <div class="contact-inner">
-    <div class="avail-badge"><div class="avail-dot"></div><span class="avail-text">Open to work · June 2027 · McLean/Tysons, VA</span></div>
+    <div class="avail-badge"><div class="avail-dot"></div><span class="avail-text">Open to work · June 2027 </span></div>
     <div class="s-label">Let's Talk</div>
     <div class="contact-headline">The bridge<br>is <em>open.</em></div>
     <p class="contact-sub">Actively looking for AI Growth Marketing, Developer Marketing, and GTM strategy roles. If you need someone who can read a technical spec in the morning and write a market positioning doc in the afternoon — let's talk.</p>
