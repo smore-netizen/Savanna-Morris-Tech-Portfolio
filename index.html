@@ -10,6 +10,7 @@
 <meta name="twitter:description" content="The bridge between what engineers build and what the market buys."/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Savanna Morris — GTM Strategy &amp; AI Systems</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%23111010%27/%3E%3Crect x=%2710%27 y=%2748%27 width=%2744%27 height=%273%27 fill=%27%23B8922A%27/%3E%3Ctext x=%2732%27 y=%2741%27 text-anchor=%27middle%27 font-family=%27Georgia,serif%27 font-size=%2729%27 font-weight=%27700%27 fill=%27%23F7F5F0%27%3ESM%3C/text%3E%3C/svg%3E"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -136,10 +137,35 @@ footer span{color:var(--gold)}
 .quote-mark{font-family:'Playfair Display',serif;font-size:72px;color:var(--gold);line-height:0.6;margin-bottom:16px;opacity:0.4}
 .quote-text{font-family:'Playfair Display',serif;font-size:clamp(20px,2.5vw,30px);font-weight:400;font-style:italic;color:var(--ink);line-height:1.5;margin-bottom:20px}
 .quote-attr{font-size:11px;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)}
+.rn-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:32px}
+.rn-card{background:var(--paper);padding:36px 32px}
+.rn-label{font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.rn-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--ink);line-height:1.25;margin-bottom:12px}
+.rn-desc{font-size:14px;color:var(--ink-60);line-height:1.7}
+.rn-cta{margin-top:28px}
+#builds .samples-grid{grid-template-columns:repeat(3,1fr)}
+.build-shot{display:block;width:100%;height:auto;aspect-ratio:1200/609;object-fit:cover;border:1px solid var(--rule)}
+.cs-card{background:var(--paper);border:1px solid var(--rule);padding:48px clamp(24px,5vw,56px);margin-top:32px;display:flex;flex-direction:column}
+.cs-title{font-family:'Playfair Display',serif;font-size:clamp(22px,2.4vw,30px);font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:32px}
+.cs-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-bottom:12px}
+.cs-label{font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.cs-cols p{font-size:14px;color:var(--ink-60);line-height:1.75;margin:0}
+.cs-cols strong{color:var(--ink)}
+@media(max-width:900px){.rn-grid,#builds .samples-grid,.cs-cols{grid-template-columns:1fr}.cs-cols{gap:24px}}
 .testi-section{background:var(--cream)}
-.testi-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--rule);border:1px solid var(--rule)}
-.testi-card{background:var(--paper);padding:44px 40px;display:flex;flex-direction:column}
-.testi-quote{font-family:'Playfair Display',serif;font-size:16px;font-style:italic;color:var(--ink);line-height:1.75;margin-bottom:28px;flex:1}
+.testi-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;background:var(--rule);border:1px solid var(--rule);scrollbar-width:none;order:0;flex:0 0 100%;outline:none}
+.testi-grid::-webkit-scrollbar{display:none}
+.testi-grid:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.testi-card{flex:0 0 100%;scroll-snap-align:start;background:var(--paper);padding:52px clamp(24px,6vw,72px);display:flex;flex-direction:column}
+.carousel-container{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:16px}
+.carousel-btn{order:1;width:44px;height:44px;border-radius:50%;border:1px solid var(--rule);background:var(--paper);color:var(--ink);font-size:15px;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.carousel-btn:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.carousel-btn:focus-visible,.carousel-dot:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.carousel-dots{order:1;display:flex;align-items:center;gap:4px}
+.carousel-dot{width:24px;height:24px;padding:8px;border:none;border-radius:50%;background:var(--ink-25);background-clip:content-box;cursor:pointer;transition:background-color .2s}
+.carousel-dot.on{background-color:var(--gold)}
+@media (prefers-reduced-motion:reduce){.testi-grid{scroll-behavior:auto}}
+.testi-quote{max-width:780px;font-family:'Playfair Display',serif;font-size:17px;font-style:italic;color:var(--ink);line-height:1.75;margin-bottom:28px;flex:1}
 .testi-person{display:flex;align-items:center;gap:14px;margin-top:auto}
 .testi-initials{width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--paper);font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;letter-spacing:0.03em}
 .testi-name{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px}
@@ -166,6 +192,10 @@ footer span{color:var(--gold)}
 .sample-desc{font-size:14px;color:var(--ink-60);line-height:1.75}
 .sample-btn{display:inline-block;margin-top:auto;padding-top:20px;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:2px;transition:color 0.2s}
 .sample-btn:hover{color:var(--gold)}
+.sample-card .sample-btn,.cs-card .sample-btn,.rn-cta{align-self:flex-start}
+.tag{white-space:nowrap}
+.sample-tags,.tags{display:flex;flex-wrap:wrap;gap:8px}
+.samples-grid>*,.rn-grid>*,.cs-cols>*{min-width:0}
 @media(max-width:900px){
   nav{padding:16px 24px}
   .nav-links{display:none}
@@ -186,11 +216,19 @@ footer span{color:var(--gold)}
   .contact-section{padding:72px 24px}
   footer{padding:24px}
   .quote-band{padding:52px 24px}
-  .testi-grid{grid-template-columns:1fr}
+
   .now-grid{grid-template-columns:1fr;gap:40px}
   .samples-grid{grid-template-columns:1fr}
 }
 </style>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://smore-netizen.github.io/Savanna-Morris-Tech-Portfolio/"/>
+<meta property="og:title" content="Savanna Morris | GTM Strategy &amp; AI Systems"/>
+<meta property="og:image" content="https://smore-netizen.github.io/Savanna-Morris-Tech-Portfolio/thumbnail.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://smore-netizen.github.io/Savanna-Morris-Tech-Portfolio/thumbnail.png"/>
 </head>
 <body>
 
@@ -200,10 +238,10 @@ footer span{color:var(--gold)}
   <a href="#" class="nav-logo">Savanna Morris</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
+    <li><a href="#right-now">Now</a></li>
     <li><a href="#builds">Builds</a></li>
-    <li><a href="#work">Work</a></li>
-    <li><a href="#now">Next</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#case-studies">Case Studies</a></li>
+    <li><a href="#experience">Experience</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
@@ -214,13 +252,13 @@ footer span{color:var(--gold)}
     <div class="hero-photo-caption">Savanna Morris</div>
   </div>
   <div class="hero-left">
-    <div class="hero-eyebrow">GTM Strategy &amp; AI Systems</div>
+    <div class="hero-eyebrow">GTM, Growth &amp; AI Systems</div>
     <h1>Savanna<br><em>Morris.</em></h1>
-    <p class="hero-sub">Where <strong>technical systems meet human behavior</strong> — I turn that intersection into go-to-market decisions, market narratives, and measurable outcomes.</p>
+    <p class="hero-sub"><strong>I build go-to-market strategy and the AI systems that run it.</strong></p>
     <p class="hero-thesis">The bridge between what engineers build and what the market buys.</p>
     <div class="hero-actions">
-      <a href="#experience" class="btn btn-dark">See My Work</a>
-      <a href="#contact" class="btn btn-outline">Open to Work</a>
+      <a href="#builds" class="btn btn-dark">See My Work</a>
+      <a href="https://calendly.com/savmor099/savanna-morris-consultation" target="_blank" rel="noopener" class="btn btn-outline">Book a Call</a>
     </div>
   </div>
   <div class="hero-right">
@@ -229,20 +267,20 @@ footer span{color:var(--gold)}
       <div class="stat-l">Lift in newsletter open rates at Cloudera, with my manager</div>
     </div>
     <div class="stat-row">
+      <div class="stat-n">2,800<sub>+</sub></div>
+      <div class="stat-l">Employees reached by the platform my recommendation brought to Cloudera</div>
+    </div>
+    <div class="stat-row">
       <div class="stat-n">Top <sub>2%</sub></div>
       <div class="stat-l">Selected at DataAnnotation for adversarial LLM evaluation</div>
     </div>
     <div class="stat-row">
-      <div class="stat-n">2,800<sub>+</sub></div>
-      <div class="stat-l">Employees reached by the comms platform I vetted and recommended</div>
+      <div class="stat-n">130<sub>K+</sub></div>
+      <div class="stat-l">Video views grown on a $200 ad budget</div>
     </div>
     <div class="stat-row">
-      <div class="stat-n">3<sub>×</sub></div>
-      <div class="stat-l">Competitive international market practicums</div>
-    </div>
-    <div class="stat-row">
-      <div class="stat-n">3.1<sub>K+</sub></div>
-      <div class="stat-l">3,100+ followers built organically as independent published artist</div>
+      <div class="stat-n">3<sub>-part</sub></div>
+      <div class="stat-l">AI career workshop series I created, approved by Pepperdine's Career Center</div>
     </div>
   </div>
 </section>
@@ -258,12 +296,12 @@ footer span{color:var(--gold)}
   <div class="bridge-cell">
     <div class="bridge-icon">The Bridge</div>
     <div class="bridge-head">I translate between worlds.</div>
-    <div class="bridge-desc">At Cloudera, I owned a complex vendor evaluation: researched, vetted, and built into a strategy deck my manager took to the CMO. The platform I recommended was adopted company-wide. <strong>Same internship. Same summer. Real impact</strong> — the gap this work closes.</div>
+    <div class="bridge-desc">At Cloudera, I owned a complex vendor evaluation: researched, vetted, and built into a strategy deck my manager took to the CMO. The platform I recommended was adopted company-wide.</div>
   </div>
   <div class="bridge-cell">
-    <div class="bridge-icon">Creative Strategy</div>
-    <div class="bridge-head">I speak human.</div>
-    <div class="bridge-desc">A minor in Entrepreneurship isn't decoration — it shapes how markets, audiences, and attention actually work. As an independent published artist with <strong>3,100+ followers built organically</strong>, this comes from building something from nothing and understanding how to hold people's attention.</div>
+    <div class="bridge-icon">Growth</div>
+    <div class="bridge-head">I grow things from zero.</div>
+    <div class="bridge-desc">I grew my music from nothing to <strong>3,100+ followers and 130,000+ views</strong> on a $200 ad budget, using the same tools I bring to GTM: audience segmentation, organic growth loops, and performance analytics.</div>
   </div>
 </div>
 
@@ -280,20 +318,176 @@ footer span{color:var(--gold)}
   <div class="about-cols">
     <div class="about-body">
       <div class="s-title">Built for the <em>intersection.</em></div>
-      <p>Most people are either technical or creative. I'm passionate about both. As a Business Administration student at Pepperdine with a minor in Entrepreneurship, my work lives at the place where structured data meets human behavior — exactly where the best product decisions get made.</p>
+      <p>Most people are either technical or creative. I'm passionate about both. As a Business Administration student at Pepperdine with a minor in Entrepreneurship, my work lives at the place where structured data meets human behavior — exactly where the best go-to-market decisions get made.</p>
       <p>At <strong>Cloudera</strong>, I was given ownership of an enterprise vendor evaluation project — researching and vetting communications platform options, then proposing a recommended vendor. I independently initiated and led the demo calls, with my manager joining for pricing conversations. The vendor I vetted and recommended was ultimately selected and implemented — unlocking AI-enabled language translations, global audience segmentation, and advanced analytics visibility, and enabling Cloudera to scale its newsletter strategy internationally across 2,800+ employees.</p>
-      <p>At <strong>DataAnnotation</strong>, I was selected in the <strong>top 2% of applicants</strong> to design adversarial systems that break AI models — finding the edge cases where reasoning fails and safety guardrails don't hold. Understanding how LLMs actually work has come from deliberately breaking them.</p>
-      <p>Right now I'm managing a five-person student consulting team advising a Los Angeles nonprofit on go-to-market strategy, and building AI tools of my own on the side. Next step: GTM strategy and solutions consulting roles where the technical and creative sides need someone fluent in both.</p>
+      <p>At <strong>DataAnnotation</strong>, I was selected in the <strong>top 2% of applicants</strong> to design adversarial prompts that break AI models — finding the edge cases where reasoning fails and safety guardrails don't hold. Understanding how LLMs actually work has come from deliberately breaking them.</p>
+      <p>Right now I'm managing a five-person student consulting team advising a Los Angeles nonprofit on go-to-market strategy, and building AI tools of my own on the side. Next step: GTM, growth, and solutions consulting roles where the technical and creative sides need someone fluent in both.</p>
     </div>
     <div class="about-aside">
-      <div class="fact-row"><div class="fact-key">Seeking</div><div class="fact-val">GTM Strategy · Solutions Consulting · AI &amp; GTM Consulting</div></div>
+      <div class="fact-row"><div class="fact-key">Seeking</div><div class="fact-val">GTM &amp; Growth Strategy · Solutions Consulting · AI &amp; GTM Consulting</div></div>
       <div class="fact-row"><div class="fact-key">Education</div><div class="fact-val">BS Business Administration · Minor Entrepreneurship · Pepperdine University, Expected April 2027</div></div>
-      <div class="fact-row"><div class="fact-key">Location</div><div class="fact-val">Available June 2027</div></div>
+      <div class="fact-row"><div class="fact-key">Location</div><div class="fact-val">Malibu, CA · Open to relocating within the US</div></div>
       <div class="fact-row"><div class="fact-key">AI Stack</div><div class="fact-val">Claude · ChatGPT · Gemini · LLM API Red-Teaming · Prompt Architecture</div></div>
       <div class="fact-row"><div class="fact-key">Technical</div><div class="fact-val">Figma · Jira · Scrum · AI Tooling (Claude, ChatGPT, Gemini) · Python &amp; React (actively learning)</div></div>
-      <div class="fact-row"><div class="fact-key">Languages</div><div class="fact-val">English (Native) · Spanish (Fluent) · Korean (Intermediate)</div></div>
+      <div class="fact-row"><div class="fact-key">Languages</div><div class="fact-val">English (Native) · Spanish (Professional Working) · Korean (Intermediate)</div></div>
       <div class="fact-row"><div class="fact-key">Outside</div><div class="fact-val">D1 Track Athlete · Independent Artist · WAVES WORSHIP · Student Programming Board · Published, Expressionists Magazine (2 years running) · Student-Led Ministry E-Board Member · Outdoor Recreation Trip Leader</div></div>
     </div>
+  </div>
+</section>
+
+<hr class="rule"/>
+
+<section class="section section-alt" id="right-now">
+  <div class="s-label">Right Now · October 2026</div>
+  <div class="s-title">What I'm <em>working on.</em></div>
+  <div class="rn-grid">
+    <div class="rn-card">
+      <div class="rn-label">Teaching · Pepperdine Career Center</div>
+      <div class="rn-title">AI Career Optimization Workshop Series</div>
+      <div class="rn-desc">I created and will lead a 3-part workshop series teaching students in every major how to use AI to build their careers: career strategy, AI tools for resumes and interview prep, and hands-on AI skills. Approved and confirmed by the Pepperdine Career Center. Sessions run November 4, November 11, and December 2, 2:30 to 3:30 p.m., in CCB 341.</div>
+    </div>
+    <div class="rn-card">
+      <div class="rn-label">Consulting · Service Leadership Capstone</div>
+      <div class="rn-title">GTM Strategy for a Community Nonprofit</div>
+      <div class="rn-desc">Leading a five-person student consulting team advising a Los Angeles community nonprofit on go-to-market strategy, fundraising, and outreach. I own the final client deliverable and run client and team meetings.</div>
+    </div>
+    <div class="rn-card">
+      <div class="rn-label">Building · AI Tools</div>
+      <div class="rn-title">AI Agents for Learning and Job Search</div>
+      <div class="rn-desc">Building AI tutor agents to teach myself Python and Figma, plus an AI career agent that finds and scores roles that fit my profile.</div>
+    </div>
+  </div>
+  <a href="https://calendly.com/savmor099/savanna-morris-consultation" target="_blank" rel="noopener" class="sample-btn rn-cta">Book a call →</a>
+</section>
+
+<hr class="rule"/>
+
+<section class="section" id="builds">
+  <div class="s-label">Built with AI</div>
+  <div class="s-title">Things I've <em>built</em></div>
+  <div class="samples-grid">
+
+    <div class="sample-card">
+      <div class="sample-header"><div>
+        <div class="sample-co">Python · Validated concept</div>
+        <div class="sample-title">Champion Detection Agent</div>
+        <div class="sample-desc">A scoring engine that surfaces developer champions before any outreach budget gets spent. It weighs contribution depth (45%), reach (30%), and consistency (25%) from public GitHub data. Built as a GTM concept and reviewed by an enterprise CMO; still in active development.</div>
+      </div></div>
+      <div class="sample-tags"><span class="tag">Python</span><span class="tag">Lead Scoring</span><span class="tag">Developer GTM</span></div>
+      <a href="https://calendly.com/savmor099/savanna-morris-consultation" target="_blank" rel="noopener" class="sample-btn">Request a demo →</a>
+    </div>
+
+    <div class="sample-card">
+      <div class="sample-header"><div>
+        <div class="sample-co">AI-designed system</div>
+        <div class="sample-title">Interactive Call Playbooks</div>
+        <div class="sample-desc">A system I designed for prepping every networking and client call: tabbed agendas, scripts, question banks, and prep checklists that adapt to the contact's role, industry, and how warm the relationship is. Sales enablement, built for networking.</div>
+      </div></div>
+      <div class="sample-tags"><span class="tag">Sales Enablement</span><span class="tag">Prompt Architecture</span><span class="tag">HTML</span></div>
+      <a href="https://calendly.com/savmor099/savanna-morris-consultation" target="_blank" rel="noopener" class="sample-btn">Request a demo →</a>
+    </div>
+
+    <div class="sample-card">
+      <img class="build-shot" src="orr-verse.jpg" alt="Orr Verse app showing a shared reading streak, progress through the Bible, and today's chapter" loading="lazy" width="1200" height="609"/>
+      <div class="sample-header"><div>
+        <div class="sample-co">Shipped · Progressive web app</div>
+        <div class="sample-title">Orr Verse</div>
+        <div class="sample-desc">A shared Bible reading app I shipped end to end, with a Firebase backend and automated push notifications through GitHub Actions. Proof I can take a product from idea to live.</div>
+      </div></div>
+      <div class="sample-tags"><span class="tag">Firebase</span><span class="tag">GitHub Actions</span><span class="tag">PWA</span></div>
+    </div>
+
+  </div>
+</section>
+
+<hr class="rule"/>
+
+<section class="section" id="case-studies">
+  <div class="s-label">Case Studies</div>
+  <div class="s-title">How I <em>work.</em></div>
+    <div class="cs-card">
+    <div class="cs-head">
+      <div class="sample-co">Cloudera · Summer 2025</div>
+      <div class="cs-title">Scaling a global newsletter for 2,800+ employees</div>
+    </div>
+    <div class="cs-cols">
+      <div>
+        <div class="cs-label">The challenge</div>
+        <p>Cloudera's internal newsletter reached a global workforce, but the platform behind it limited translation, audience targeting, and analytics, and there was no clear read on what was working.</p>
+      </div>
+      <div>
+        <div class="cs-label">What I did</div>
+        <p>Audited 17 months of engagement data across teams and built dashboards and heatmaps to find the gaps. Led the vendor evaluation end to end: ran the demo calls, compared Staffbase and Poppulo, and served as the main vendor contact. Then pulled the strategy, analytics, and recommendation into an executive deck my manager took to the CMO.</p>
+      </div>
+      <div>
+        <div class="cs-label">The result</div>
+        <p><strong>72% lift</strong> in newsletter open rates, with my manager. My recommendation secured executive adoption of a new platform that now reaches <strong>2,800+ employees</strong> with AI translations, audience segmentation, and advanced analytics.</p>
+      </div>
+    </div>
+    <a href="Newsletter%20Audit%20Report.pdf" target="_blank" class="sample-btn">Read the audit →</a>
+  </div>
+  <div class="cs-card">
+    <div class="cs-head">
+      <div class="sample-co">AI Build · Validated Concept</div>
+      <div class="cs-title">Cutting the research out of building a developer relations team</div>
+    </div>
+    <div class="cs-cols">
+      <div>
+        <div class="cs-label">The challenge</div>
+        <p>An enterprise tech company was building a new developer relations team. Finding the right developers to recruit and partner with meant hours of manual research across GitHub and social profiles, time the team didn't have while getting started.</p>
+      </div>
+      <div>
+        <div class="cs-label">What I did</div>
+        <p>Designed an AI scoring agent that pulls public GitHub data and ranks developers by contribution depth (45%), reach (30%), and consistency (25%), so the team starts from a ranked shortlist instead of a blank search. I brought the concept directly to the company's CMO.</p>
+      </div>
+      <div>
+        <div class="cs-label">The result</div>
+        <p>A validated concept with defined success metrics that earned the CMO's interest. I'm continuing to develop it.</p>
+      </div>
+    </div>
+    <a href="https://calendly.com/savmor099/savanna-morris-consultation" target="_blank" rel="noopener" class="sample-btn">Request a demo →</a>
+  </div>
+  <div class="cs-card">
+    <div class="cs-head">
+      <div class="sample-co">Rappi · Buenos Aires · April 2026</div>
+      <div class="cs-title">Choosing Rappi's next market: an IPO-readiness strategy</div>
+    </div>
+    <div class="cs-cols">
+      <div>
+        <div class="cs-label">The challenge</div>
+        <p>Rappi, Latin America's delivery super-app, had dropped from a $5.5B valuation in 2021 to about $1.8B. Heading toward a potential IPO, it needed a credible growth story and a clear answer to where post-IPO capital should go.</p>
+      </div>
+      <div>
+        <div class="cs-label">What I did</div>
+        <p>On the ground in Buenos Aires, our three-person team interviewed a local restaurant partner and a former UBS markets analyst, then analyzed Rappi's competitive position, its AI opportunity, and IPO comparables like Mercado Libre, DoorDash, and Grab. <strong>I led the overall strategic recommendation:</strong> where Rappi should expand once it goes public.</p>
+      </div>
+      <div>
+        <div class="cs-label">The result</div>
+        <p>We recommended using post-IPO capital to pilot entry into <strong>Panama City</strong>, for three reasons: one of the highest GDPs per capita in Latin America for Rappi's higher-margin services, a dollarized economy that offsets currency risk from markets like Argentina, and the urban density Rappi needs to operate profitably. Rappi's fintech and travel services also give it a clear niche against PedidosYa and Uber Eats there.</p>
+      </div>
+    </div>
+    <a href="Rappi_IPO_Strategy.pdf" target="_blank" class="sample-btn">View the deck →</a>
+  </div>
+  <div class="cs-card">
+    <div class="cs-head">
+      <div class="sample-co">Independent Artist · Growth</div>
+      <div class="cs-title">Growing an audience from zero to 130K+ views on a $200 budget</div>
+    </div>
+    <div class="cs-cols">
+      <div>
+        <div class="cs-label">The challenge</div>
+        <p>Launching as an independent artist with no audience, no label, and almost no marketing budget.</p>
+      </div>
+      <div>
+        <div class="cs-label">What I did</div>
+        <p>Started on BandLab, where I reached 1,700 followers in two months, then moved my audience to Instagram. I studied which trending videos performed best and replicated what worked, then used my analytics to find the days and times my audience was most active and posted daily on that schedule. Whenever a video organically passed 10,000 views, I put a small ad budget behind it to amplify what was already working.</p>
+      </div>
+      <div>
+        <div class="cs-label">The result</div>
+        <p><strong>3,100+ followers</strong> and <strong>130,000+ video views</strong>, with one clip reaching 50,000 views, on $200 of total ad spend. My original singing videos consistently performed best. The same playbook I bring to GTM: find the signal, double down, and only spend where it's already working.</p>
+      </div>
+    </div>
+    
   </div>
 </section>
 
@@ -318,11 +512,11 @@ footer span{color:var(--gold)}
           <div class="impact-text">Built a three-part strategy deck covering GTM communications framework, engagement analytics, and vendor consultation — which my manager took to the CMO after my internship ended. Together we lifted newsletter open rates <strong>72%</strong>, and the platform I recommended now reaches 2,800+ employees.</div>
         </div>
         <ul class="exp-list-ul">
-          <li>Researched and developed a GTM communications strategy and engagement framework in collaboration with manager — analyzed CSV data, built Excel dashboards and heatmaps, and translated findings into a clear strategic recommendation, contributing to a <strong>72% lift in newsletter open rates</strong> alongside my manager.</li>
-          <li><strong>Enterprise implementation:</strong> vetted and recommended a new enterprise communications platform that leadership adopted. The switch unlocked AI-enabled language translations, global audience segmentation, and advanced analytics visibility, enabling Cloudera to scale its newsletter strategy internationally across 2,800+ employees.</li>
+          <li>Researched and developed a GTM communications strategy and engagement framework in collaboration with manager — analyzed CSV data, built Excel dashboards and heatmaps, and translated findings into a clear strategic recommendation.</li>
+          <li><strong>Enterprise implementation:</strong> led the vendor evaluation, and my recommendation secured executive adoption of a new enterprise communications platform. The switch unlocked AI-enabled language translations, global audience segmentation, and advanced analytics visibility, enabling Cloudera to scale its newsletter strategy internationally across 2,800+ employees.</li>
           <li>Compiled all three components — GTM strategy, engagement analytics, and vendor recommendation — into a single executive deck delivered to manager for CMO presentation. Was slated to present directly but internship concluded before the meeting.</li>
           <li>Researched and proposed competitive battlecards, buyer personas, and a positioning framework for the Media &amp; Entertainment vertical, which my manager finalized and rolled out across the marketing org.</li>
-          <li>Served as the communications bridge between Cloudera's senior leadership and 5+ external vendor stakeholders — accelerating procurement timelines and keeping a multi-party enterprise deal on track.</li>
+          <li>Served as the communications bridge between Cloudera's senior leadership and 5+ external vendor stakeholders, keeping a multi-party vendor evaluation moving.</li>
           <li>Authored public-facing recap articles and Q&amp;A blogs for Cloudera.com to amplify corporate culture and drive digital brand visibility.</li>
         </ul>
         <div class="tags"><span class="tag">GTM Strategy</span><span class="tag">Engagement Analytics</span><span class="tag">Vendor Consultation</span><span class="tag">Executive Deck</span><span class="tag">Stakeholder Comms</span><span class="tag">Data Analysis</span></div>
@@ -333,7 +527,7 @@ footer span{color:var(--gold)}
       <div class="exp-meta">
         <div class="exp-co">Go Mad Ventures</div>
         <div class="exp-title-text">Business Development &amp; Product Design Intern</div>
-        <div class="exp-date">June 2026</div>
+        <div class="exp-date">May – June 2026</div>
         <div class="exp-pm-badge">Technical Fluency + GTM</div>
       </div>
       <div class="exp-body">
@@ -357,19 +551,18 @@ footer span{color:var(--gold)}
       <div class="exp-meta">
         <div class="exp-co">DataAnnotation</div>
         <div class="exp-title-text">AI Model Evaluation — Adversarial Prompt Engineering</div>
-        <div class="exp-date">2026 · Remote</div>
+        <div class="exp-date">April – July 2026 · Remote</div>
         <div class="exp-pm-badge">AI + Technical</div>
       </div>
       <div class="exp-body">
         <div class="impact-callout">
           <div class="impact-label">Impact</div>
-          <div class="impact-text">Selected in the top 2% of applicants — and subsequently qualified for specialized domain-specific AI evaluation roles reflecting expert-level proficiency recognized beyond standard annotation work.</div>
+          <div class="impact-text">Selected in the top 2% of applicants, then qualified for specialized, domain-specific AI evaluation work beyond standard annotation.</div>
         </div>
         <ul class="exp-list-ul">
-          <li>Qualified for specialized domain-specific AI evaluation roles within DataAnnotation — selected based on demonstrated expert-level proficiency in AI reasoning, safety, and system design.</li>
-          <li>Designed multi-turn adversarial prompts to deliberately break LLM reasoning — mapping failure modes, logic gaps, and guardrail weaknesses that improve model safety at the system level.</li>
+                    <li>Designed multi-turn adversarial prompts to deliberately break LLM reasoning — mapping failure modes, logic gaps, and guardrail weaknesses that help improve model safety.</li>
           <li>Engineered multi-layered system prompts conditioning LLMs for complex domains: business case studies and market structures.</li>
-          <li>Authored precise behavioral constraints and logic guidelines used to evaluate model accuracy — the same rigor that goes into defining clear, defensible acceptance criteria for any product launch.</li>
+          <li>Authored precise behavioral constraints and logic guidelines used to evaluate model accuracy — the same rigor that goes into clear, defensible messaging for AI products.</li>
         </ul>
         <div class="tags"><span class="tag">Adversarial Red-Teaming</span><span class="tag">Prompt Architecture</span><span class="tag">LLM Alignment</span><span class="tag">AI Safety</span><span class="tag">Domain Specialization</span></div>
       </div>
@@ -385,7 +578,7 @@ footer span{color:var(--gold)}
       <div class="exp-body">
         <div class="impact-callout">
           <div class="impact-label">Impact</div>
-          <div class="impact-text">Leading a five-person student consulting team advising the North Hollywood Interfaith Food Pantry on go-to-market strategy, fundraising, and outreach.</div>
+          <div class="impact-text">Leading a five-person student consulting team advising a Los Angeles community nonprofit on go-to-market strategy, fundraising, and outreach.</div>
         </div>
         <ul class="exp-list-ul">
           <li>Own the final client deliverable and run both client and team meetings.</li>
@@ -460,50 +653,6 @@ footer span{color:var(--gold)}
 
     <div class="exp-row">
       <div class="exp-meta">
-        <div class="exp-co">Independent Artist</div>
-        <div class="exp-title-text">Recording Artist</div>
-        <div class="exp-date">January 2023 – Present · Los Angeles, CA</div>
-        <div class="exp-pm-badge">Product + Creative GTM</div>
-      </div>
-      <div class="exp-body">
-        <div class="impact-callout">
-          <div class="impact-label">Impact</div>
-          <div class="impact-text">Built and scaled a personal recording artist profile from 0 to 3,100+ followers and 130,000+ total video views by applying GTM principles — audience segmentation, organic growth loops, and performance analytics — to a self-directed creative product lifecycle.</div>
-        </div>
-        <ul class="exp-list-ul">
-          <li>Published independently across all major streaming platforms — managing the full release process from creative development through distribution and platform setup.</li>
-          <li>Grew a following of 3,100+ organically through consistent content creation and audience-first strategy across platforms.</li>
-          <li>Partnered with Chordii and Radio.com as a brand sponsor — creating content videos and representing the brand as an independent artist.</li>
-          <li>Performed original music as an independent solo artist in front of 600+ people, as well as additional solo performances across separate venues.</li>
-        </ul>
-        <div class="tags"><span class="tag">Audience Growth</span><span class="tag">GTM &amp; Growth</span><span class="tag">Brand Partnerships</span><span class="tag">Data-Driven Marketing</span><span class="tag">Brand Strategy</span></div>
-      </div>
-    </div>
-
-    <div class="exp-row">
-      <div class="exp-meta">
-        <div class="exp-co">NCAA — Pepperdine</div>
-        <div class="exp-title-text">Division I Student-Athlete &amp; NIL Partner</div>
-        <div class="exp-date">August 2023 – March 2025</div>
-        <div class="exp-pm-badge">Operations + Partnerships</div>
-      </div>
-      <div class="exp-body">
-        <div class="impact-callout">
-          <div class="impact-label">Impact</div>
-          <div class="impact-text">Secured three NIL partnerships — one through direct selection, two through competitive application — while maintaining a 3.6 GPA and training 20+ hours per week.</div>
-        </div>
-        <ul class="exp-list-ul">
-          <li>Selected for and executed an NIL brand partnership with <strong>The Perfect Jean</strong> (approached directly) — created digital media assets and represented the brand as a D1 athlete.</li>
-          <li>Applied for and was accepted into an NIL partnership with <strong>Twinbridge Sports</strong> — produced content and fulfilled partnership deliverables while managing a full-time athletic and academic schedule.</li>
-          <li>Applied for and was selected by <strong>Next Level Prep</strong> for a paid podcast interview — recorded at a professional studio discussing athletic experience, performance mindset, and the student-athlete journey.</li>
-          <li>Balanced 20+ hours a week of training and travel with a full course load and multiple active partnerships, consistently delivering on all commitments at once.</li>
-        </ul>
-        <div class="tags"><span class="tag">NIL Partnerships</span><span class="tag">Brand Content</span><span class="tag">Podcast</span><span class="tag">Time Management</span></div>
-      </div>
-    </div>
-
-    <div class="exp-row">
-      <div class="exp-meta">
         <div class="exp-co">Argentina Practicum</div>
         <div class="exp-title-text">Global Strategy Consultant</div>
         <div class="exp-date">Buenos Aires — International Project</div>
@@ -512,7 +661,7 @@ footer span{color:var(--gold)}
       <div class="exp-body">
         <div class="impact-callout">
           <div class="impact-label">Impact</div>
-          <div class="impact-text">Delivered an on-the-ground IPO readiness and geographic expansion framework for Rappi — a hyper-growth South American platform — using AI-assisted market intelligence and macroeconomic modeling.</div>
+          <div class="impact-text">With my team, delivered an on-the-ground IPO readiness and geographic expansion framework for Rappi — a hyper-growth South American platform — using AI-assisted market intelligence and macroeconomic modeling.</div>
         </div>
         <ul class="exp-list-ul">
           <li>Mapped regional labor supply metrics and evaluated hyper-growth corporate scaling models to produce a defensible cross-border expansion strategy for one of Latin America's most prominent tech platforms.</li>
@@ -554,6 +703,7 @@ footer span{color:var(--gold)}
         <li>Marketing Metrics &amp; KPIs</li>
         <li>Data Synthesis &amp; Reporting</li>
         <li>Audience Segmentation</li>
+        <li>Organic Growth &amp; Audience Building</li>
         <li>Data-Driven GTM Strategy</li>
       </ul>
     </div>
@@ -562,7 +712,9 @@ footer span{color:var(--gold)}
       <ul class="skill-items">
         <li>Adversarial Prompt Engineering</li>
         <li>LLM API Testing &amp; Evaluation</li>
-        <li>AI System Interface Design</li>
+        <li>AI Agent Development</li>
+        <li>LLM System Prompt Design</li>
+        <li>AI Workflow Design</li>
         <li>Figma (Product Design)</li>
         <li>Claude · ChatGPT · Gemini</li>
         <li>Behavioral Safety Evaluation</li>
@@ -612,9 +764,9 @@ footer span{color:var(--gold)}
   <div class="lead-grid">
     <div class="lead-cell">
       <div class="lead-sub">D1 Athletics · Pepperdine</div>
-      <div class="lead-heading">Division I Track Athlete</div>
-      <div class="lead-desc">20+ hours per week of elite training and travel for two years, concurrent with a 3.6 GPA and active entrepreneurial work. The constraint environment of D1 athletics is directly transferable: deliver under pressure, adapt to feedback, execute on tight timelines.</div>
-      <div class="lead-impact">3.6 GPA maintained throughout · WCC Commissioner's Honor Roll — Gold</div>
+      <div class="lead-heading">Division I Track Athlete &amp; NIL Partner</div>
+      <div class="lead-desc">Two years of 20+ hours a week of training and travel alongside a 3.6 GPA. Landed three NIL partnerships: The Perfect Jean approached me directly, and I competed for and won a partnership with Twinbridge Sports and a paid podcast interview with Next Level Prep. D1 taught me to deliver under pressure, take coaching, and execute on tight timelines.</div>
+      <div class="lead-impact">3 NIL partnerships · 3.6 GPA · WCC Commissioner's Honor Roll — Gold</div>
     </div>
     <div class="lead-cell">
       <div class="lead-sub">Ministry Leadership · Pepperdine University</div>
@@ -623,10 +775,10 @@ footer span{color:var(--gold)}
       <div class="lead-impact">70+ attendees at multicultural events · 2+ years executive leadership</div>
     </div>
     <div class="lead-cell">
-      <div class="lead-sub">Creative · Independent + Pepperdine</div>
+      <div class="lead-sub">Creative + Growth · Independent + Pepperdine</div>
       <div class="lead-heading">Recording Artist &amp; WAVES WORSHIP Band Member</div>
-      <div class="lead-desc">An independent published artist across all major platforms with 3,100+ followers built organically. Performed original music as a solo independent artist in front of 600+ people, with additional solo performances across venues. Brand partner with Chordii. I'm also an active member of WAVES WORSHIP, a worship band at Pepperdine, co-writing original music with fellow members.</div>
-      <div class="lead-impact">3,100+ followers · Solo performance: 600+ · Brand partner: Chordii · WAVES WORSHIP, active member</div>
+      <div class="lead-desc">Grew my music from zero to 3,100+ followers and 130,000+ video views on a $200 ad budget, using the same approach I bring to GTM: audience segmentation, organic growth loops, and performance analytics. Published on every major platform, performed for 600+ people, and partnered with Chordii and Radio.com as a brand sponsor. Also an active member of WAVES WORSHIP, a worship band at Pepperdine, co-writing original music.</div>
+      <div class="lead-impact">0 → 3,100+ followers · 130K+ views · $200 ad spend · 600+ live audience</div>
     </div>
     <div class="lead-cell">
       <div class="lead-sub">Civic Initiative · Argentina</div>
@@ -645,95 +797,13 @@ footer span{color:var(--gold)}
 
 <hr class="rule"/>
 
-<section class="section" id="builds">
-  <div class="s-label">Built with AI</div>
-  <div class="s-title">Things I've <em>built</em></div>
-  <div class="samples-grid">
-
-    <div class="sample-card">
-      <div class="sample-header"><div>
-        <div class="sample-co">Python · Validated concept</div>
-        <div class="sample-title">Champion Detection Agent</div>
-        <div class="sample-desc">A scoring engine that surfaces developer champions before any outreach budget gets spent. It weighs contribution depth (45%), reach (30%), and consistency (25%) from public GitHub data. Built as a GTM concept and reviewed by an enterprise CMO; still in active development.</div>
-      </div></div>
-      <div class="sample-tags"><span class="tag">Python</span><span class="tag">Lead Scoring</span><span class="tag">Developer GTM</span></div>
-    </div>
-
-    <div class="sample-card">
-      <div class="sample-header"><div>
-        <div class="sample-co">AI-designed system</div>
-        <div class="sample-title">Interactive Call Playbooks</div>
-        <div class="sample-desc">A system I designed for prepping every networking and client call: tabbed agendas, scripts, question banks, and prep checklists that adapt to the contact's role, industry, and how warm the relationship is. Sales enablement, built for networking. Live demo available on request.</div>
-      </div></div>
-      <div class="sample-tags"><span class="tag">Sales Enablement</span><span class="tag">Prompt Architecture</span><span class="tag">HTML</span></div>
-    </div>
-
-    <div class="sample-card">
-      <div class="sample-header"><div>
-        <div class="sample-co">Shipped · Progressive web app</div>
-        <div class="sample-title">Orr Verse</div>
-        <div class="sample-desc">A shared Bible reading app I shipped end to end, with a Firebase backend and automated push notifications through GitHub Actions. Proof I can take a product from idea to live.</div>
-      </div></div>
-      <div class="sample-tags"><span class="tag">Firebase</span><span class="tag">GitHub Actions</span><span class="tag">PWA</span></div>
-    </div>
-
-  </div>
-</section>
-
-<hr class="rule"/>
-
-<section class="section" id="work">
-  <div class="s-label">Work Samples</div>
-  <div class="s-title">Selected <em>Deliverables</em></div>
-  <div class="samples-grid">
-
-    <div class="sample-card">
-      <div class="sample-header">
-        <div>
-          <div class="sample-co">Cloudera Inc. · Summer 2025</div>
-          <div class="sample-title">Internal Communications Newsletter Audit</div>
-          <div class="sample-desc">A data-driven audit of Cloudera's internal newsletter program across 17 months of engagement data. Analyzed open rates, CTR, and engagement patterns across teams, identified strategic gaps, and delivered a vendor recommendation with a full competitive analysis between Staffbase and Poppulo. Produced independently as a summer intern. Internal contacts and sensitive identifiers have been redacted.</div>
-        </div>
-      </div>
-      <div class="sample-tags">
-        <span class="tag">Data Analysis</span>
-        <span class="tag">Strategic Recommendation</span>
-        <span class="tag">Vendor Evaluation</span>
-        <span class="tag">Internal Comms</span>
-      </div>
-      <a href="Newsletter%20Audit%20Report.pdf" target="_blank" class="sample-btn">View Document →</a>
-    </div>
-
-    <div class="sample-card">
-      <div class="sample-header">
-        <div>
-          <div class="sample-co">Pepperdine University · BA492 · April 2026</div>
-          <div class="sample-title">Rappi IPO Strategy — Global Consulting Case</div>
-          <div class="sample-desc">A 25-slide consulting presentation advising Rappi on IPO readiness and geographic expansion strategy, produced on-the-ground in Buenos Aires during the Argentina Global Practicum. Covers competitive analysis, AI opportunity modeling, Argentina's strategic role in Rappi's global growth, financial comparables, and a Panama City market entry recommendation. Role: Market &amp; Recommendation Strategist.</div>
-        </div>
-      </div>
-      <div class="sample-tags">
-        <span class="tag">IPO Strategy</span>
-        <span class="tag">Market Expansion</span>
-        <span class="tag">Competitive Analysis</span>
-        <span class="tag">AI Opportunity Modeling</span>
-        <span class="tag">Global Markets</span>
-      </div>
-      <a href="Rappi_IPO_Strategy.pdf" target="_blank" class="sample-btn">View Document →</a>
-    </div>
-
-  </div>
-</section>
-
-<hr class="rule"/>
-
 <section class="section now-section" id="now">
   <div class="s-label">Building Toward</div>
   <div class="now-grid">
     <div class="now-body">
       <div class="s-title">Intentional about <em>what's next.</em></div>
-      <p>I'm looking for a <strong>GTM strategy or solutions consulting role</strong> at an enterprise software or AI company, where I can step into a team that builds with purpose and moves fast. Not just any company — a team that takes culture seriously, thinks globally, and trusts junior talent with real responsibility early.</p>
-      <p>Outside of work hours, I'm <strong>teaching myself Python and Figma through AI agents I've built</strong> — because the best go-to-market strategy comes with the systems to run it. I also partner with early-stage founders on GTM and the AI workflows behind it.</p>
+      <p>I'm looking for a <strong>GTM, growth, or solutions consulting role</strong> at an enterprise software or AI company, where I can step into a team that builds with purpose and moves fast. Not just any company — a team that takes culture seriously, thinks globally, and trusts junior talent with real responsibility early.</p>
+      <p>Outside of work hours, I'm <strong>teaching myself Python and Figma with AI tutor agents I built</strong> — because the best go-to-market strategy comes with the systems to run it. I also partner with early-stage founders on GTM and the AI workflows behind it.</p>
       <p>Available to start <strong>June 2027</strong>. If you're building something that matters and need someone who bridges the technical and the human — let's talk.</p>
     </div>
     <div class="now-cards">
@@ -741,7 +811,7 @@ footer span{color:var(--gold)}
         <div class="now-card-dot"></div>
         <div class="now-card-text">
           <div class="now-card-label">Role Target</div>
-          <div class="now-card-val">GTM Strategy · Solutions Consulting · Startup GTM Consulting</div>
+          <div class="now-card-val">GTM &amp; Growth Strategy · Solutions Consulting · Startup GTM Consulting</div>
         </div>
       </div>
       <div class="now-card">
@@ -755,7 +825,7 @@ footer span{color:var(--gold)}
         <div class="now-card-dot"></div>
         <div class="now-card-text">
           <div class="now-card-label">Actively Learning</div>
-          <div class="now-card-val">Python and Figma via AI agents I built myself — closing the gap between strategy and spec</div>
+          <div class="now-card-val">Python and Figma, through AI tutor agents I built myself, to close the gap between strategy and spec</div>
         </div>
       </div>
       <div class="now-card">
@@ -795,7 +865,7 @@ footer span{color:var(--gold)}
                     <div> 
                         <div class="testi-name">Debbie Kruger</div> 
                         <div class="testi-role">Global Communications &amp; Social Impact at Cloudera<br>Strategic Program Director</div> 
-                        <div class="testi-context">Direct Manager · Cloudera Internship · Summer 2025</div> 
+                        <div class="testi-context">Direct Manager · Cloudera Internship · Written June 2026</div> 
                     </div> 
                 </div> 
             </div> 
@@ -808,7 +878,7 @@ footer span{color:var(--gold)}
                     <div> 
                         <div class="testi-name">Patricio Fay</div> 
                         <div class="testi-role">Professor, IAE Business School<br>Buenos Aires, Argentina</div> 
-                        <div class="testi-context">Academic Instructor · Argentina Global Practicum · June 2026</div> 
+                        <div class="testi-context">Academic Instructor · Argentina Global Practicum · Written June 2026</div> 
                     </div> 
                 </div> 
             </div> 
@@ -821,7 +891,7 @@ footer span{color:var(--gold)}
                     <div> 
                         <div class="testi-name">Katie Comstock</div> 
                         <div class="testi-role">Global Communications<br>Communications Coordinator & Copy Editor</div> 
-                        <div class="testi-context">Co-worker · Cloudera Internship · Summer 2025</div> 
+                        <div class="testi-context">Co-worker · Cloudera Internship · Written July 2026</div> 
                     </div> 
                 </div> 
             </div> 
@@ -834,7 +904,7 @@ footer span{color:var(--gold)}
                     <div> 
                         <div class="testi-name">Gregory Daum</div> 
                         <div class="testi-role">Professor, Pepperdine University<br>Pepperdine Communication/Religion Division</div> 
-                        <div class="testi-context">Direct Manager · Speech Lab Specialist · August 2026</div> 
+                        <div class="testi-context">Direct Manager · Speech Lab · Written August 2026</div> 
                     </div> 
                 </div> 
             </div> 
@@ -851,7 +921,7 @@ footer span{color:var(--gold)}
     <div class="avail-badge"><div class="avail-dot"></div><span class="avail-text">Open to work · June 2027 </span></div>
     <div class="s-label">Let's Talk</div>
     <div class="contact-headline">The bridge<br>is <em>open.</em></div>
-    <p class="contact-sub">Actively looking for GTM strategy and solutions consulting roles, and open to early-stage founders who need GTM help. If you need someone who can read a technical spec in the morning and write a market positioning doc in the afternoon — let's talk.</p>
+    <p class="contact-sub">Actively looking for GTM, growth, and solutions consulting roles, and open to early-stage founders who need GTM and growth help. If you need someone who can read a technical spec in the morning and write a market positioning doc in the afternoon — let's talk.</p>
     <div class="contact-grid">
       <a href="mailto:Savmor099@gmail.com" class="contact-cell">
         <div class="contact-cell-label">Email</div>
@@ -861,9 +931,9 @@ footer span{color:var(--gold)}
         <div class="contact-cell-label">LinkedIn</div>
         <div class="contact-cell-val">savanna-morris-tech</div>
       </a>
-      <a href="tel:7736800108" class="contact-cell">
-        <div class="contact-cell-label">Phone</div>
-        <div class="contact-cell-val">(773) 680-0108</div>
+      <a href="https://calendly.com/savmor099/savanna-morris-consultation" target="_blank" rel="noopener" class="contact-cell">
+        <div class="contact-cell-label">Book a Call</div>
+        <div class="contact-cell-val">15-minute intro call</div>
       </a>
     </div>
     <div class="denver-note">Based in Malibu, CA </div>
@@ -885,15 +955,39 @@ footer span{color:var(--gold)}
 const ticks=[
   "Cloudera GTM Frameworks for the Media &amp; Entertainment Vertical",
   "Top 2% Selected at DataAnnotation — Adversarial LLM Evaluation",
-  "Open to GTM Strategy &amp; Solutions Consulting Roles",
+  "Open to GTM, Growth &amp; Solutions Consulting Roles",
+  "AI Career Optimization Workshop Series · Approved at Pepperdine",
   "Built with AI: Agents, Playbooks, and Shipped Apps",
   "The Bridge Between Technical Execution and Creative Strategy",
-  "3,100+ Followers · D1 Athlete · 3 Global Practicums · 3.6 GPA",
+  "130K+ Views on a $200 Budget · D1 Athlete · 3 Global Practicums · 3.6 GPA",
   "Adversarial LLM Red-Teaming · Prompt Architecture · Python (Active)",
   "GTM Playbooks · Competitor Battlecards · Positioning Frameworks",
 ];
 const m=document.getElementById('marquee');
 m.innerHTML=[...ticks,...ticks].map(t=>`<span>${t}</span>`).join('');
+</script>
+<script>
+(function(){
+  var g=document.querySelector('.testi-grid'); if(!g) return;
+  var cards=[].slice.call(g.querySelectorAll('.testi-card'));
+  var prev=document.getElementById('prevBtn'), next=document.getElementById('nextBtn');
+  var dots=document.createElement('div'); dots.className='carousel-dots';
+  var idx=0;
+  cards.forEach(function(c,i){
+    var b=document.createElement('button'); b.className='carousel-dot'; b.type='button';
+    b.setAttribute('aria-label','Show testimonial '+(i+1));
+    b.addEventListener('click',function(){go(i)}); dots.appendChild(b);
+  });
+  next.parentNode.insertBefore(dots,next);
+  function update(){[].slice.call(dots.children).forEach(function(d,i){d.classList.toggle('on',i===idx);d.setAttribute('aria-current',i===idx?'true':'false')})}
+  function go(i){idx=(i+cards.length)%cards.length; g.scrollTo({left:idx*g.clientWidth}); update()}
+  prev.addEventListener('click',function(){go(idx-1)});
+  next.addEventListener('click',function(){go(idx+1)});
+  g.tabIndex=0; g.setAttribute('aria-label','Testimonials, use arrow keys to browse');
+  g.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();go(idx+1)} if(e.key==='ArrowLeft'){e.preventDefault();go(idx-1)}});
+  var t; g.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){var i=Math.round(g.scrollLeft/g.clientWidth); if(i!==idx){idx=i;update()}},60)},{passive:true});
+  update();
+})();
 </script>
 </body>
 </html>
