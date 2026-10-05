@@ -194,6 +194,8 @@ footer span{color:var(--gold)}
 .sample-btn:hover{color:var(--gold)}
 .sample-card .sample-btn,.cs-card .sample-btn,.rn-cta{align-self:flex-start}
 .tag{white-space:nowrap}
+.exp-cs-link{display:inline-block;margin-top:20px}
+.cs-card{scroll-margin-top:96px}
 .sample-tags,.tags{display:flex;flex-wrap:wrap;gap:8px}
 .samples-grid>*,.rn-grid>*,.cs-cols>*{min-width:0}
 @media(max-width:900px){
@@ -301,7 +303,7 @@ footer span{color:var(--gold)}
   <div class="bridge-cell">
     <div class="bridge-icon">Growth</div>
     <div class="bridge-head">I grow things from zero.</div>
-    <div class="bridge-desc">I grew my music from nothing to <strong>3,100+ followers and 130,000+ views</strong> on a $200 ad budget, using the same tools I bring to GTM: audience segmentation, organic growth loops, and performance analytics.</div>
+    <div class="bridge-desc">On a small budget, with data, by finding the signal and <strong>doubling down on what's already working.</strong> It's how I built an audience from scratch, and how I approach every launch.</div>
   </div>
 </div>
 
@@ -321,7 +323,7 @@ footer span{color:var(--gold)}
       <p>Most people are either technical or creative. I'm passionate about both. As a Business Administration student at Pepperdine with a minor in Entrepreneurship, my work lives at the place where structured data meets human behavior — exactly where the best go-to-market decisions get made.</p>
       <p>At <strong>Cloudera</strong>, I was given ownership of an enterprise vendor evaluation project — researching and vetting communications platform options, then proposing a recommended vendor. I independently initiated and led the demo calls, with my manager joining for pricing conversations. The vendor I vetted and recommended was ultimately selected and implemented — unlocking AI-enabled language translations, global audience segmentation, and advanced analytics visibility, and enabling Cloudera to scale its newsletter strategy internationally across 2,800+ employees.</p>
       <p>At <strong>DataAnnotation</strong>, I was selected in the <strong>top 2% of applicants</strong> to design adversarial prompts that break AI models — finding the edge cases where reasoning fails and safety guardrails don't hold. Understanding how LLMs actually work has come from deliberately breaking them.</p>
-      <p>Right now I'm managing a five-person student consulting team advising a Los Angeles nonprofit on go-to-market strategy, and building AI tools of my own on the side. My next step: GTM, growth, and solutions consulting roles where the technical and creative sides need someone fluent in both.</p>
+      <p>Right now I'm managing a five-person student consulting team advising a Los Angeles nonprofit on go-to-market strategy, and building AI tools of my own on the side. Next step: GTM, growth, and solutions consulting roles where the technical and creative sides need someone fluent in both.</p>
     </div>
     <div class="about-aside">
       <div class="fact-row"><div class="fact-key">Seeking</div><div class="fact-val">GTM &amp; Growth Strategy · Solutions Consulting · AI &amp; GTM Consulting</div></div>
@@ -344,7 +346,7 @@ footer span{color:var(--gold)}
     <div class="rn-card">
       <div class="rn-label">Teaching · Pepperdine Career Center</div>
       <div class="rn-title">AI Career Optimization Workshop Series</div>
-      <div class="rn-desc">I created and will lead a 3-part workshop series teaching students in every major how to use AI to build their careers: career strategy, AI tools for resumes and interview prep, and hands-on AI skills. Approved and confirmed by the Pepperdine Career Center. Sessions run November 4, November 11, and December 2, 2:30 to 3:30 p.m., in CCB 341 at Pepperdine University.</div>
+      <div class="rn-desc">I created and will lead a 3-part workshop series teaching students in every major how to use AI to build their careers: career strategy, AI tools for resumes and interview prep, and hands-on AI skills. Approved and confirmed by the Pepperdine Career Center. Sessions run November 4, November 11, and December 2, 2:30 to 3:30 p.m., in CCB 341.</div>
     </div>
     <div class="rn-card">
       <div class="rn-label">Consulting · Service Leadership Capstone</div>
@@ -392,7 +394,7 @@ footer span{color:var(--gold)}
       <div class="sample-header"><div>
         <div class="sample-co">Shipped · Progressive web app</div>
         <div class="sample-title">Orr Verse</div>
-        <div class="sample-desc">A shared Bible reading app I shipped end to end, with a Firebase backend and automated push notifications through GitHub Actions.</div>
+        <div class="sample-desc">A shared Bible reading app I shipped end to end, with a Firebase backend and automated push notifications through GitHub Actions. Proof I can take a product from idea to live.</div>
       </div></div>
       <div class="sample-tags"><span class="tag">Firebase</span><span class="tag">GitHub Actions</span><span class="tag">PWA</span></div>
     </div>
@@ -405,7 +407,7 @@ footer span{color:var(--gold)}
 <section class="section" id="case-studies">
   <div class="s-label">Case Studies</div>
   <div class="s-title">How I <em>work.</em></div>
-    <div class="cs-card">
+    <div class="cs-card" id="cs-cloudera">
     <div class="cs-head">
       <div class="sample-co">Cloudera · Summer 2025</div>
       <div class="cs-title">Scaling a global newsletter for 2,800+ employees</div>
@@ -447,7 +449,7 @@ footer span{color:var(--gold)}
     </div>
     <a href="https://calendly.com/savmor099/savanna-morris-consultation" target="_blank" rel="noopener" class="sample-btn">Request a demo →</a>
   </div>
-  <div class="cs-card">
+  <div class="cs-card" id="cs-rappi">
     <div class="cs-head">
       <div class="sample-co">Rappi · Buenos Aires · April 2026</div>
       <div class="cs-title">Choosing Rappi's next market: an IPO-readiness strategy</div>
@@ -502,24 +504,22 @@ footer span{color:var(--gold)}
     <div class="exp-row">
       <div class="exp-meta">
         <div class="exp-co">Cloudera Inc.</div>
-        <div class="exp-title-text">Marketing &amp; Communications Intern</div>
+        <div class="exp-title-text">Marketing &amp; Global Communications Intern</div>
         <div class="exp-date">June – August 2025</div>
         <div class="exp-pm-badge">GTM Strategy</div>
       </div>
       <div class="exp-body">
         <div class="impact-callout">
           <div class="impact-label">Impact</div>
-          <div class="impact-text">Built a three-part strategy deck covering GTM communications framework, engagement analytics, and vendor consultation — which my manager took to the CMO after my internship ended. Together we lifted newsletter open rates <strong>72%</strong>, and the platform I recommended now reaches 2,800+ employees.</div>
+          <div class="impact-text">Shaped GTM infrastructure used across a <strong>1,020-person global sales and marketing org</strong>, and led the vendor evaluation behind Cloudera's new enterprise communications platform.</div>
         </div>
         <ul class="exp-list-ul">
-          <li>Researched and developed a GTM communications strategy and engagement framework in collaboration with manager — analyzed CSV data, built Excel dashboards and heatmaps, and translated findings into a clear strategic recommendation.</li>
-          <li><strong>Enterprise implementation:</strong> led the vendor evaluation, and my recommendation secured executive adoption of a new enterprise communications platform. The switch unlocked AI-enabled language translations, global audience segmentation, and advanced analytics visibility, enabling Cloudera to scale its newsletter strategy internationally across 2,800+ employees.</li>
-          <li>Compiled all three components — GTM strategy, engagement analytics, and vendor recommendation — into a single executive deck delivered to manager for CMO presentation. Was slated to present directly but internship concluded before the meeting.</li>
-          <li>Researched and proposed competitive battlecards, buyer personas, and a positioning framework for the Media &amp; Entertainment vertical, which my manager finalized and rolled out across a 1,020-person global sales and marketing org.</li>
-          <li>Served as the communications bridge between Cloudera's senior leadership and 5+ external vendor stakeholders, keeping a multi-party vendor evaluation moving.</li>
-          <li>Authored public-facing recap articles and Q&amp;A blogs for Cloudera.com to amplify corporate culture and drive digital brand visibility.</li>
+          <li>Researched and proposed competitive battlecards, buyer personas, and a positioning framework for the Media &amp; Entertainment vertical, which my manager finalized and rolled out org-wide.</li>
+          <li>Served as the main point of contact for 5+ external vendor stakeholders, running demo calls and partnering with my manager on pricing; the relationship I built led to a signed deal after my internship.</li>
+          <li>Authored public-facing recap articles and Q&amp;A blogs for Cloudera.com to amplify corporate culture and brand visibility.</li>
         </ul>
-        <div class="tags"><span class="tag">GTM Strategy</span><span class="tag">Engagement Analytics</span><span class="tag">Vendor Consultation</span><span class="tag">Executive Deck</span><span class="tag">Stakeholder Comms</span><span class="tag">Data Analysis</span></div>
+        <div class="tags"><span class="tag">GTM Strategy</span><span class="tag">Sales Enablement</span><span class="tag">Vendor Evaluation</span><span class="tag">Stakeholder Comms</span></div>
+        <a href="#cs-cloudera" class="sample-btn exp-cs-link">See the Cloudera case study →</a>
       </div>
     </div>
 
@@ -537,7 +537,7 @@ footer span{color:var(--gold)}
         </div>
         <ul class="exp-list-ul">
           <li>Self-taught SwiftUI and translated an existing HTML codebase into a native iOS application using Xcode, contributing to the development of an early-stage mobile and web application prototype using Claude, Codex, and Cursor.</li>
-          <li>Created a multi-step AI prompting strategy to refactor and optimize code with Claude while preserving the existing application architecture and integrating Claude into the Xcode development workflow.</li>
+          <li>Created a multi-step AI prompting strategy to refactor and optimize code with Claude while preserving the existing application architecture and integrating Claude Babel into the Xcode development workflow.</li>
           <li>Designed and brainstormed potential prototype features, including user onboarding, memory storage, and synthetic data capabilities.</li>
           <li>Refined the application's UI/UX by troubleshooting issues, improving prototype functionality, and iterating on key user workflows.</li>
           <li>Supported early-stage go-to-market planning, market entry strategy, and FY1–FY3 financial modeling.</li>
@@ -655,19 +655,16 @@ footer span{color:var(--gold)}
       <div class="exp-meta">
         <div class="exp-co">Argentina Practicum</div>
         <div class="exp-title-text">Global Strategy Consultant</div>
-        <div class="exp-date">Buenos Aires — International Project</div>
+        <div class="exp-date">Buenos Aires · April 2026</div>
         <div class="exp-pm-badge">Market Strategy</div>
       </div>
       <div class="exp-body">
         <div class="impact-callout">
           <div class="impact-label">Impact</div>
-          <div class="impact-text">With my team, delivered an on-the-ground IPO readiness and geographic expansion framework for Rappi — a hyper-growth South American platform — using AI-assisted market intelligence and macroeconomic modeling.</div>
+          <div class="impact-text">Led my team's strategic recommendation on where Rappi should expand after its IPO, and mapped regional labor supply metrics as part of our market analysis.</div>
         </div>
-        <ul class="exp-list-ul">
-          <li>Mapped regional labor supply metrics and evaluated hyper-growth corporate scaling models to produce a defensible cross-border expansion strategy for one of Latin America's most prominent tech platforms.</li>
-          <li>Analyzed localized market indicators, competitive positioning, and macro-environmental risks to surface high-priority geographies for expansion — the same methodology applied to product-market fit analysis.</li>
-        </ul>
-        <div class="tags"><span class="tag">Market Expansion</span><span class="tag">IPO Strategy</span><span class="tag">Macroeconomic Analysis</span><span class="tag">AI-Assisted Research</span></div>
+        <div class="tags"><span class="tag">Market Expansion</span><span class="tag">IPO Strategy</span><span class="tag">Market Analysis</span></div>
+        <a href="#cs-rappi" class="sample-btn exp-cs-link">See the Rappi case study →</a>
       </div>
     </div>
 
@@ -777,8 +774,8 @@ footer span{color:var(--gold)}
     <div class="lead-cell">
       <div class="lead-sub">Creative + Growth · Independent + Pepperdine</div>
       <div class="lead-heading">Recording Artist &amp; WAVES WORSHIP Band Member</div>
-      <div class="lead-desc">Grew my music from zero to 3,100+ followers and 130,000+ video views on a $200 ad budget, using the same approach I bring to GTM: audience segmentation, organic growth loops, and performance analytics. Published on every major platform, performed for 600+ people, and partnered with Chordii and Radio.com as a brand sponsor. Also an active member of WAVES WORSHIP, a worship band at Pepperdine, co-writing original music.</div>
-      <div class="lead-impact">0 → 3,100+ followers · 130K+ views · $200 ad spend · 600+ live audience</div>
+      <div class="lead-desc">Independent artist published on every major platform, with live performances for 600+ people and brand partnerships with Chordii and Radio.com. Also an active member of WAVES WORSHIP, a worship band at Pepperdine, co-writing original music.</div>
+      <div class="lead-impact">Published artist · 600+ live audience · Brand partners: Chordii, Radio.com</div>
     </div>
     <div class="lead-cell">
       <div class="lead-sub">Civic Initiative · Argentina</div>
