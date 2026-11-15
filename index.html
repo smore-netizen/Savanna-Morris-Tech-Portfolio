@@ -143,7 +143,7 @@ footer span{color:var(--gold)}
 .rn-title{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--ink);line-height:1.25;margin-bottom:12px}
 .rn-desc{font-size:14px;color:var(--ink-60);line-height:1.7}
 .rn-cta{margin-top:28px}
-#builds .samples-grid{grid-template-columns:repeat(3,1fr)}
+#builds .samples-grid{grid-template-columns:repeat(2,1fr)}
 .build-shot{display:block;width:100%;height:auto;aspect-ratio:1200/609;object-fit:cover;border:1px solid var(--rule)}
 .cs-card{background:var(--paper);border:1px solid var(--rule);padding:48px clamp(24px,5vw,56px);margin-top:32px;display:flex;flex-direction:column}
 .cs-title{font-family:'Playfair Display',serif;font-size:clamp(22px,2.4vw,30px);font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:32px}
@@ -281,8 +281,8 @@ footer span{color:var(--gold)}
       <div class="stat-l">Video views grown on a $200 ad budget</div>
     </div>
     <div class="stat-row">
-      <div class="stat-n">3<sub>-part</sub></div>
-      <div class="stat-l">AI career workshop series I created, approved by Pepperdine's Career Center</div>
+      <div class="stat-n">2<sub>nd</sub></div>
+      <div class="stat-l">Place of 12 teams at the RuthAI &amp; Google AI for Social Good Hackathon, selected from 400+ applicants</div>
     </div>
   </div>
 </section>
@@ -340,13 +340,13 @@ footer span{color:var(--gold)}
 <hr class="rule"/>
 
 <section class="section section-alt" id="right-now">
-  <div class="s-label">Right Now · October 2026</div>
+  <div class="s-label">Right Now · November 2026</div>
   <div class="s-title">What I'm <em>working on.</em></div>
   <div class="rn-grid">
     <div class="rn-card">
       <div class="rn-label">Teaching · Pepperdine Career Center</div>
       <div class="rn-title">AI Career Optimization Workshop Series</div>
-      <div class="rn-desc">I created and will lead a 3-part workshop series teaching students in every major how to use AI to build their careers: career strategy, AI tools for resumes and interview prep, and hands-on AI skills. Approved and confirmed by the Pepperdine Career Center. Sessions run November 4, November 11, and December 2, 2:30 to 3:30 p.m., in CCB 341.</div>
+      <div class="rn-desc">I designed and teach a 3-part series, supported by the Pepperdine Career Center, that shows students in every major how to use AI in their careers. Two sessions done. <strong>Session 1:</strong> why AI fluency matters, and building a personal AI assistant that writes cover letters in your own voice, tailors your resume to a job posting, drafts networking messages, and turns skill gaps into learning projects. <strong>Session 2:</strong> how to structure prompts, how tokenization works, and which LLM to use for which task. Session 3 runs December 2, 2:30 to 3:30 p.m., in CCB 341.</div>
     </div>
     <div class="rn-card">
       <div class="rn-label">Consulting · Service Leadership Capstone</div>
@@ -368,6 +368,16 @@ footer span{color:var(--gold)}
   <div class="s-label">Built with AI</div>
   <div class="s-title">Things I've <em>built</em></div>
   <div class="samples-grid">
+
+    <div class="sample-card">
+      <div class="sample-header"><div>
+        <div class="sample-co">Hackathon · 2nd place · Built in 6 hours</div>
+        <div class="sample-title">Finch</div>
+        <div class="sample-desc">A web app that helps women going through a divorce find resources and get financially organized. At its center is Finch, a Gemini case agent with a private memory. It learns about the user as they talk, keeps a cited wiki of their case, flags missing documents, and drafts a brief to prep for meeting a lawyer. Also includes a finance dashboard, court-form automation, a divorce checklist, and a lawyer locator built on the Google Maps API.</div>
+      </div></div>
+      <div class="sample-tags"><span class="tag">React + TypeScript</span><span class="tag">Gemini Agent</span><span class="tag">Firebase</span><span class="tag">Google Maps API</span></div>
+      <a href="#cs-finch" class="sample-btn">Read the case study →</a>
+    </div>
 
     <div class="sample-card">
       <div class="sample-header"><div>
@@ -427,6 +437,26 @@ footer span{color:var(--gold)}
       </div>
     </div>
     <a href="Newsletter%20Audit%20Report.pdf" target="_blank" class="sample-btn">Read the audit →</a>
+  </div>
+  <div class="cs-card" id="cs-finch">
+    <div class="cs-head">
+      <div class="sample-co">RuthAI &amp; Google AI for Social Good Hackathon · Google, Playa Vista</div>
+      <div class="cs-title">Finch: 6 hours from a blank repo to a 2nd-place AI product</div>
+    </div>
+    <div class="cs-cols">
+      <div>
+        <div class="cs-label">The challenge</div>
+        <p>About 50 builders were selected from more than 400 applicants. Each team had six hours to build a working MVP from scratch, make a pitch deck, and present to the judges at Google's Playa Vista office. Our problem: women going through a divorce face a confusing, expensive process, and many don't have a full picture of their own finances.</p>
+      </div>
+      <div>
+        <div class="cs-label">What we built</div>
+        <p>A full-stack web app (React, Node/Express, Firebase) built around <strong>Finch</strong>, a long-running Gemini case agent with a private memory. Finch updates what it knows about the user as they talk and every 30 seconds offers a "tweet" with a tip or a question worth asking. It also connects to a finance dashboard that surfaces assets the user may not know about, onboarding tailored to each relationship status, in-app court forms generated with pdf-lib, a step-by-step checklist, and a lawyer locator with directions and calling built in. We designed for discretion: a quick-exit button, Firebase Auth, and encrypted storage.</p>
+      </div>
+      <div>
+        <div class="cs-label">The result</div>
+        <p><strong>2nd place out of 12 teams.</strong> We presented at a reception that drew more than 1,000 applicants, and our team was interviewed and photographed by the media there. Next on the roadmap: translation into other languages, and financial education for women in any relationship status.</p>
+      </div>
+    </div>
   </div>
   <div class="cs-card">
     <div class="cs-head">
@@ -627,7 +657,8 @@ footer span{color:var(--gold)}
           <div class="impact-text">One of 17 students on a board overseeing 40% of Pepperdine’s Campus Life budget — planning and executing the full student activities portfolio, from freshman orientation through large-scale festivals.</div>
         </div>
         <ul class="exp-list-ul">
-          <li>Conduct calls with 10+ vendors to finalize quotes, negotiate pricing, and conduct logistics. 
+          <li>Led a Harry Potter-themed late-night event on a <strong>$15,000 budget</strong> that drew <strong>390+ attendees</strong>: negotiated vendor pricing, coordinated logistics, delegated roles, and adapted day-of plans through 30 mph winds.</li>
+          <li>Conduct calls with 10+ vendors to finalize quotes, negotiate pricing, and conduct logistics.</li>
           <li>Pitch and negotiate directly with music artists to bring them on campus, and manage vendor hiring and pricing negotiations.</li>
           <li>Currently co-managing one of Pepperdine’s biggest traditional annual events covering 13% of Campus Life budget— working directly across admin and marketing teams to coordinate logistics, budget, and programming.</li>
         </ul>
@@ -827,6 +858,12 @@ footer span{color:var(--gold)}
       <div class="lead-impact">70+ attendees at multicultural events · 2+ years executive leadership</div>
     </div>
     <div class="lead-cell">
+      <div class="lead-sub">Public Speaking · Woodland Hills, CA</div>
+      <div class="lead-heading">Paid Guest Speaker — Woodland Hills Christian Church</div>
+      <div class="lead-desc">Invited back to deliver sermons to the congregation, as a paid guest speaker each time. Writing and delivering a message that holds a room for that long takes the same skills as a strong pitch: know your audience, build a clear argument, and say it with conviction.</div>
+      <div class="lead-impact">2 paid speaking engagements</div>
+    </div>
+    <div class="lead-cell">
       <div class="lead-sub">Creative + Growth · Independent + Pepperdine</div>
       <div class="lead-heading">Recording Artist &amp; WAVES WORSHIP Band Member</div>
       <div class="lead-desc">Independent artist published on every major platform, with live performances for 600+ people and brand partnerships with Chordii and Radio.com. Also an active member of WAVES WORSHIP, a worship band at Pepperdine, co-writing original music.</div>
@@ -1008,7 +1045,8 @@ const ticks=[
   "Cloudera GTM Frameworks for the Media &amp; Entertainment Vertical",
   "Top 2% Selected at DataAnnotation — Adversarial LLM Evaluation",
   "Open to GTM, Growth &amp; Solutions Consulting Roles",
-  "AI Career Optimization Workshop Series · Approved at Pepperdine",
+  "2nd Place · RuthAI &amp; Google AI for Social Good Hackathon",
+  "AI &amp; Your Career Workshop Series · Pepperdine Career Center",
   "Built with AI: Agents, Playbooks, and Shipped Apps",
   "The Bridge Between Technical Execution and Creative Strategy",
   "130K+ Views on a $200 Budget · D1 Athlete · 3 Global Practicums · 3.6 GPA",
