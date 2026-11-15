@@ -144,6 +144,9 @@ footer span{color:var(--gold)}
 .rn-desc{font-size:14px;color:var(--ink-60);line-height:1.7}
 .rn-cta{margin-top:28px}
 #builds .samples-grid{grid-template-columns:repeat(2,1fr)}
+#right-now .rn-grid{grid-template-columns:repeat(2,1fr)}
+.rn-links{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:20px}.rn-links .sample-btn{margin-top:0}
+.cs-shot{display:block;width:100%;height:auto;aspect-ratio:1200/560;object-fit:cover;object-position:center 30%;border:1px solid var(--rule);margin-bottom:28px}
 .build-shot{display:block;width:100%;height:auto;aspect-ratio:1200/609;object-fit:cover;border:1px solid var(--rule)}
 .cs-card{background:var(--paper);border:1px solid var(--rule);padding:48px clamp(24px,5vw,56px);margin-top:32px;display:flex;flex-direction:column}
 .cs-title{font-family:'Playfair Display',serif;font-size:clamp(22px,2.4vw,30px);font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:32px}
@@ -151,7 +154,7 @@ footer span{color:var(--gold)}
 .cs-label{font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
 .cs-cols p{font-size:14px;color:var(--ink-60);line-height:1.75;margin:0}
 .cs-cols strong{color:var(--ink)}
-@media(max-width:900px){.rn-grid,#builds .samples-grid,.cs-cols{grid-template-columns:1fr}.cs-cols{gap:24px}}
+@media(max-width:900px){.rn-grid,#right-now .rn-grid,#builds .samples-grid,.cs-cols{grid-template-columns:1fr}.cs-cols{gap:24px}}
 .testi-section{background:var(--cream)}
 .testi-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;background:var(--rule);border:1px solid var(--rule);scrollbar-width:none;order:0;flex:0 0 100%;outline:none}
 .testi-grid::-webkit-scrollbar{display:none}
@@ -282,7 +285,7 @@ footer span{color:var(--gold)}
     </div>
     <div class="stat-row">
       <div class="stat-n">2<sub>nd</sub></div>
-      <div class="stat-l">Place of 12 teams at the RuthAI &amp; Google AI for Social Good Hackathon, selected from 400+ applicants</div>
+      <div class="stat-l">Place of 11 teams at the RuthAI &amp; Google AI for Social Good Hackathon, selected from 400+ applicants</div>
     </div>
   </div>
 </section>
@@ -323,7 +326,7 @@ footer span{color:var(--gold)}
       <p>Most people are either technical or creative. I'm passionate about both. As a Business Administration student at Pepperdine with a minor in Entrepreneurship, my work lives at the place where structured data meets human behavior — exactly where the best go-to-market decisions get made.</p>
       <p>At <strong>Cloudera</strong>, I was given ownership of an enterprise vendor evaluation project — researching and vetting communications platform options, then proposing a recommended vendor. I independently initiated and led the demo calls, with my manager joining for pricing conversations. The vendor I vetted and recommended was ultimately selected and implemented — unlocking AI-enabled language translations, global audience segmentation, and advanced analytics visibility, and enabling Cloudera to scale its newsletter strategy internationally across 2,800+ employees.</p>
       <p>At <strong>DataAnnotation</strong>, I was selected in the <strong>top 2% of applicants</strong> to design adversarial prompts that break AI models — finding the edge cases where reasoning fails and safety guardrails don't hold. Understanding how LLMs actually work has come from deliberately breaking them.</p>
-      <p>Right now I'm serving as <strong>Founding Chief Growth Officer at Vibes</strong>, leading the growth of a real-time atmosphere map as its sole growth officer and preparing its Los Angeles beta launch. I'm also <strong>Acting Lead for Internal Communications at Cloudera</strong> through February 2027, running launch communications and employee content, and managing a five-person student consulting team advising a Los Angeles nonprofit on go-to-market strategy. I build AI tools of my own on the side. Next step: GTM, growth, and solutions consulting roles where the technical and creative sides need someone fluent in both.</p>
+      <p>Right now I'm serving as <strong>Founding Chief Growth Officer at Vibes</strong>, leading the growth of a real-time atmosphere map as its sole growth officer while it's in beta. I'm also founding <strong>TapIn</strong>, a consumer career platform selected for the inaugural Waves Innovation Accelerator cohort. On top of that, I'm <strong>Acting Lead for Internal Communications at Cloudera</strong> through February 2027, running launch communications and employee content, and managing a five-person student consulting team advising a Los Angeles nonprofit on go-to-market strategy. I build AI tools of my own on the side. Next step: GTM, growth, and solutions consulting roles where the technical and creative sides need someone fluent in both.</p>
     </div>
     <div class="about-aside">
       <div class="fact-row"><div class="fact-key">Seeking</div><div class="fact-val">GTM &amp; Growth Strategy · Solutions Consulting · AI &amp; GTM Consulting</div></div>
@@ -346,17 +349,27 @@ footer span{color:var(--gold)}
     <div class="rn-card">
       <div class="rn-label">Teaching · Pepperdine Career Center</div>
       <div class="rn-title">AI Career Optimization Workshop Series</div>
-      <div class="rn-desc">I designed and teach a 3-part series, supported by the Pepperdine Career Center, that shows students in every major how to use AI in their careers. Two sessions done. <strong>Session 1:</strong> why AI fluency matters, and building a personal AI assistant that writes cover letters in your own voice, tailors your resume to a job posting, drafts networking messages, and turns skill gaps into learning projects. <strong>Session 2:</strong> how to structure prompts, how tokenization works, and which LLM to use for which task. Session 3 runs December 2, 2:30 to 3:30 p.m., in CCB 341.</div>
+      <div class="rn-desc">I designed and teach a 3-part series, in small hands-on groups, supported by the Pepperdine Career Center, that shows students in every major how to use AI in their careers. Two sessions done. <strong>Session 1:</strong> why AI fluency matters, and building a personal AI assistant that writes cover letters in your own voice, tailors your resume to a job posting, drafts networking messages, and turns skill gaps into learning projects. <strong>Session 2:</strong> how to structure prompts, how tokenization works, and which LLM to use for which task. Session 3 runs December 2, 2:30 to 3:30 p.m., in CCB 341.</div>
+      <div class="rn-desc" style="margin-top:12px"><strong>Available to bring this series to your campus or team.</strong></div>
+      <div class="rn-links">
+        <a href="AI_Career_Selected_Slides.pdf" target="_blank" class="sample-btn">View selected slides →</a>
+        <a href="https://calendly.com/savmor099/savanna-morris-consultation" target="_blank" rel="noopener" class="sample-btn">Request the full curriculum →</a>
+      </div>
     </div>
     <div class="rn-card">
       <div class="rn-label">Consulting · Service Leadership Capstone</div>
       <div class="rn-title">GTM Strategy for a Community Nonprofit</div>
-      <div class="rn-desc">Leading a five-person student consulting team advising a Los Angeles community nonprofit on go-to-market strategy, fundraising, and outreach. As Team Lead, I own the final client deliverable and run client and team meetings.</div>
+      <div class="rn-desc">Leading a five-person student consulting team advising a Los Angeles community nonprofit on fundraising and outreach. We're building them an outreach and fundraising toolkit: a grant and donor tracker, an email and print PR packet, a volunteer outreach calendar, and job postings for an Executive Director and interns. As Team Lead, I own the final deliverable and run client and team meetings.</div>
     </div>
     <div class="rn-card">
       <div class="rn-label">Building · AI Tools</div>
       <div class="rn-title">AI Agents for Learning and Job Search</div>
       <div class="rn-desc">Building AI tutor agents to teach myself Python and Figma, plus an AI career agent that finds and scores roles that fit my profile.</div>
+    </div>
+    <div class="rn-card">
+      <div class="rn-label">Founding · Waves Innovation Accelerator</div>
+      <div class="rn-title">TapIn</div>
+      <div class="rn-desc">My own consumer career platform, selected for the inaugural cohort of the Waves Innovation Accelerator (one of 8–10 ventures chosen from 100+ applicants). I'm validating demand through interviews with college seniors and testing the core mechanic with an AI-assisted workflow.</div>
     </div>
   </div>
   <a href="https://calendly.com/savmor099/savanna-morris-consultation" target="_blank" rel="noopener" class="sample-btn rn-cta">Book a call →</a>
@@ -370,10 +383,11 @@ footer span{color:var(--gold)}
   <div class="samples-grid">
 
     <div class="sample-card">
+      <img class="build-shot" src="finch-team.jpg" alt="Savanna and her five teammates on stage at the RuthAI and Google AI for Social Good hackathon" loading="lazy" width="1200" height="848" style="object-position:center 35%"/>
       <div class="sample-header"><div>
         <div class="sample-co">Hackathon · 2nd place · Built in 6 hours</div>
         <div class="sample-title">Finch</div>
-        <div class="sample-desc">A web app that helps women going through a divorce find resources and get financially organized. At its center is Finch, a Gemini case agent with a private memory. It learns about the user as they talk, keeps a cited wiki of their case, flags missing documents, and drafts a brief to prep for meeting a lawyer. Also includes a finance dashboard, court-form automation, a divorce checklist, and a lawyer locator built on the Google Maps API.</div>
+        <div class="sample-desc">A web app that helps women going through a divorce find resources and get financially organized. At its center is Finch, a Gemini case agent with a private memory. It learns about the user as they talk, keeps a cited wiki of their case, flags missing documents, and drafts a brief to prep for meeting a lawyer. Also includes a finance dashboard, court-form automation, a divorce checklist, and a lawyer locator built on the Google Maps API. I built the frontend, the UI/UX, and the pitch, and created the brand.</div>
       </div></div>
       <div class="sample-tags"><span class="tag">React + TypeScript</span><span class="tag">Gemini Agent</span><span class="tag">Firebase</span><span class="tag">Google Maps API</span></div>
       <a href="#cs-finch" class="sample-btn">Read the case study →</a>
@@ -440,21 +454,22 @@ footer span{color:var(--gold)}
   </div>
   <div class="cs-card" id="cs-finch">
     <div class="cs-head">
-      <div class="sample-co">RuthAI &amp; Google AI for Social Good Hackathon · Google, Playa Vista</div>
+      <div class="sample-co">RuthAI &amp; Google AI for Social Good Hackathon · Google, Playa Vista · November 2026</div>
       <div class="cs-title">Finch: 6 hours from a blank repo to a 2nd-place AI product</div>
     </div>
+    <img class="cs-shot" src="finch-reception.jpg" alt="Hackathon participants photographed in front of the AI for Social Good backdrop at the reception" loading="lazy" width="1200" height="835"/>
     <div class="cs-cols">
       <div>
         <div class="cs-label">The challenge</div>
-        <p>About 50 builders were selected from more than 400 applicants. Each team had six hours to build a working MVP from scratch, make a pitch deck, and present to the judges at Google's Playa Vista office. Our problem: women going through a divorce face a confusing, expensive process, and many don't have a full picture of their own finances.</p>
+        <p>About 50 builders were selected from more than 400 applicants. Each team had six hours to build a working MVP from scratch, make a pitch deck, and pitch to a panel of judges, including creators CatGPT, Zoey Unlimited, and Chantel Jeffries, at Google's Playa Vista office. Our problem: women going through a divorce face a confusing, expensive process, and many don't have a full picture of their own finances.</p>
       </div>
       <div>
-        <div class="cs-label">What we built</div>
-        <p>A full-stack web app (React, Node/Express, Firebase) built around <strong>Finch</strong>, a long-running Gemini case agent with a private memory. Finch updates what it knows about the user as they talk and every 30 seconds offers a "tweet" with a tip or a question worth asking. It also connects to a finance dashboard that surfaces assets the user may not know about, onboarding tailored to each relationship status, in-app court forms generated with pdf-lib, a step-by-step checklist, and a lawyer locator with directions and calling built in. We designed for discretion: a quick-exit button, Firebase Auth, and encrypted storage.</p>
+        <div class="cs-label">What I built</div>
+        <p><strong>My part:</strong> the frontend and UI/UX for the app and landing page, the pitch, and the whole brand: the name, logo, font, and color palette, plus the quick-exit button and privacy notices. <strong>The team's product:</strong> a full-stack web app (React, Node/Express, Firebase) built around <strong>Finch</strong>, a long-running Gemini case agent with a private memory. Finch updates what it knows about the user as they talk and every 30 seconds offers a "tweet" with a tip or a question worth asking. It also connects to a finance dashboard that surfaces assets the user may not know about, onboarding tailored to each relationship status, in-app court forms generated with pdf-lib, a step-by-step checklist, and a lawyer locator with directions and calling built in. Security came from Firebase Auth and encrypted storage.</p>
       </div>
       <div>
         <div class="cs-label">The result</div>
-        <p><strong>2nd place out of 12 teams.</strong> We presented at a reception that drew more than 1,000 applicants, and our team was interviewed and photographed by the media there. Next on the roadmap: translation into other languages, and financial education for women in any relationship status.</p>
+        <p><strong>2nd place out of 11 teams.</strong> We presented at a reception that drew more than 1,000 applicants, and our team was interviewed and photographed by the media there. We plan to deploy it publicly soon. Next on the roadmap: translation into other languages, and financial education for women in any relationship status.</p>
       </div>
     </div>
   </div>
@@ -544,13 +559,10 @@ footer span{color:var(--gold)}
           <div class="impact-text">Acting lead for internal communications through February 2027, running <strong>five company-wide launches</strong> and the employee content and newsletter pipeline.</div>
         </div>
         <ul class="exp-list-ul">
-          <li>Handle post-EVOLVE reporting, run the monthly partner spotlight reviews, and review the glossy one-pager for Women Leaders in Technology.</li>
-          <li>Turn executive messages that leadership has vetted into reusable email templates and customizable banners, and keep the list of planned company communications current.</li>
-          <li>Coordinate communications for the Unplug calendar (November), new brand assets (January to February), STARS liquidity events (January), SKO streaming (February), and Q4 bonus announcements (February), each with its own named stakeholders.</li>
-          <li>Move Cloudera Conversations from pre-recorded content through leadership approval, ServiceNow posting, Slack amplification, and newsletter inclusion, with social cuts sent to the video team.</li>
-          <li>Draft, design, and finalize the global monthly and weekly newsletters, send monthly reminders to keep the messaging-hub folders current, and route design updates to the design contacts.</li>
-          <li>Join the annual impact report reviews, starting from last year's report.</li>
-          <li>Keep the ServiceNow page current with links, press releases, Cloudera Conversations, and leadership Q&amp;As.</li>
+          <li>Own communications for five company-wide launches, from planning through rollout, coordinating a different set of stakeholders for each.</li>
+          <li>Draft, design, and send the global weekly and monthly newsletters, and turn approved executive messages into reusable email templates and banners.</li>
+          <li>Run the Cloudera Conversations series end to end: leadership approval, intranet posting, Slack amplification, newsletter placement, and social cuts for the video team.</li>
+          <li>Handle post-event reporting for EVOLVE, Cloudera's flagship conference, run monthly partner spotlight reviews, and contribute to the annual impact report.</li>
         </ul>
         <div class="tags"><span class="tag">Internal Comms</span><span class="tag">Launch Strategy</span><span class="tag">Executive Comms</span><span class="tag">Employee Content</span></div>
       </div>
@@ -636,9 +648,11 @@ footer span{color:var(--gold)}
           <div class="impact-text">Leading a five-person student consulting team advising a Los Angeles community nonprofit on go-to-market strategy, fundraising, and outreach.</div>
         </div>
         <ul class="exp-list-ul">
-          <li>Own the final client deliverable and run both client and team meetings.</li>
-          <li>Manage task assignment and the project timeline across a five-person team.</li>
-          <li>Shape GTM, fundraising, and communications recommendations for a community nonprofit.</li>
+          <li>Own the final client deliverable and run both client and team meetings, managing task assignment and the timeline across a five-person team.</li>
+          <li>Building a fundraising and outreach tracker in Google Sheets covering grants, donations, and events.</li>
+          <li>Creating an email and print PR packet: outreach email templates (body copy, subject lines, signatures, branding), mailable flyers, gala materials, and thank-you notes for donors and volunteers.</li>
+          <li>Planning an outreach calendar of weekend volunteer events, plus sign-in table and ID recommendations.</li>
+          <li>Drafting job postings for an Executive Director and unpaid internships to help the nonprofit grow its team.</li>
         </ul>
         <div class="tags"><span class="tag">Client Consulting</span><span class="tag">GTM Strategy</span><span class="tag">Team Leadership</span><span class="tag">Fundraising Strategy</span></div>
       </div>
@@ -732,7 +746,7 @@ footer span{color:var(--gold)}
 <section class="section" id="vibes">
   <div class="s-label">Venture · Founding Team</div>
   <div class="s-title">Vibes: <em>Founding Chief Growth Officer</em></div>
-  <div class="s-deck">Vibes is a real-time atmosphere map that helps people find restaurants, bars, and cafés by how a place feels. I lead its early growth and development as the company's sole growth officer, and I am preparing the initial Los Angeles beta launch.</div>
+  <div class="s-deck">Vibes is a real-time atmosphere map that helps people find restaurants, bars, and cafés by how a place feels. I lead its early growth and development as the company's sole growth officer. Vibes is in beta, and we're now defining the business model ahead of the Los Angeles launch.</div>
   <div class="rn-grid">
     <div class="rn-card">
       <div class="rn-label">Product · Vision and strategy</div>
@@ -753,6 +767,28 @@ footer span{color:var(--gold)}
     <div class="rn-card">
       <div class="rn-label">Fundraising · Investor relations</div>
       <div class="rn-desc">Communicating the vision and progress to investors.</div>
+    </div>
+    <div class="rn-card">
+      <div class="rn-label">Business model · Monetization</div>
+      <div class="rn-desc">Planning how Vibes makes money while the product is in beta, so the launch strategy and revenue model are built together.</div>
+    </div>
+  </div>
+
+  <div class="s-label" style="margin-top:72px">Venture · Founder</div>
+  <div class="s-title">TapIn: <em>Founder</em></div>
+  <div class="s-deck">TapIn is a consumer career platform I'm building. It was selected for the inaugural cohort of the Waves Innovation Accelerator, one of 8–10 ventures chosen from 100+ applicants.</div>
+  <div class="rn-grid">
+    <div class="rn-card">
+      <div class="rn-label">Accelerator · Waves Innovation</div>
+      <div class="rn-desc">Inaugural cohort, chosen from 100+ applicants.</div>
+    </div>
+    <div class="rn-card">
+      <div class="rn-label">Customer discovery · Validation</div>
+      <div class="rn-desc">Validating demand through customer interviews with college seniors.</div>
+    </div>
+    <div class="rn-card">
+      <div class="rn-label">Product · AI-assisted prototype</div>
+      <div class="rn-desc">Testing the core mechanic with an AI-assisted workflow before building the full product.</div>
     </div>
   </div>
 </section>
@@ -1046,6 +1082,7 @@ const ticks=[
   "Top 2% Selected at DataAnnotation — Adversarial LLM Evaluation",
   "Open to GTM, Growth &amp; Solutions Consulting Roles",
   "2nd Place · RuthAI &amp; Google AI for Social Good Hackathon",
+  "Founder, TapIn · Waves Innovation Accelerator Inaugural Cohort",
   "AI &amp; Your Career Workshop Series · Pepperdine Career Center",
   "Built with AI: Agents, Playbooks, and Shipped Apps",
   "The Bridge Between Technical Execution and Creative Strategy",
