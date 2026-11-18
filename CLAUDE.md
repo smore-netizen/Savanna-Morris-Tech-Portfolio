@@ -89,5 +89,5 @@ Don't name teammates on the site.
 - ruthAI repo going public → add code/live link. App screenshot to replace team photo on Builds card.
 - Professional hackathon photos.
 - Cloudera acting-lead metrics; Vibes beta/business-model milestones; capstone final outcome.
-- Resume PDF (`Savanna_Morris_Resume_EnterpriseAI_Master.pdf`) should be updated to match the site
-  (Sparrow, TapIn/accelerator, workshop, SPB event, speaking).
+- Resume: `Savanna_Morris_Resume.pdf` (1 page, Nov 2026; made from her Word file with LibreOffice,
+  LinkedIn/GitHub/Portfolio links added). It calls TapIn "Stealth Startup". Linked from the Download Resume button.
