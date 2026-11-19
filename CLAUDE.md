@@ -42,7 +42,8 @@ Read this before editing. Keep it updated when facts change.
 - Roadmap: language translation; financial education for women in any relationship status.
 - Repo `github.com/dzymachine/ruthAI` is **private** (she's a collaborator). Add a "View the code"
   button only once it's public. Team plans to deploy soon.
-- Photos: `finch-team.jpg` (on stage), `finch-reception.jpg` (reception). Professional photos coming.
+- Photos (professional, Nov 2026): `sparrow-stage.jpg` (pitching on stage, Builds card), `sparrow-group.jpg` +
+  `sparrow-audience.jpg` (side by side in `.cs-gallery` in the case study; stacked on phones).
 - Site: first card in Builds, case study `#cs-sparrow`, top stat, marquee line.
 
 ### TapIn — her own company (NOT Vibes)
@@ -86,8 +87,8 @@ Don't name teammates on the site.
 
 ## Open items / ask Savanna about
 - Session 3 attendance + student quotes; Career Center testimonial.
-- ruthAI repo going public → add code/live link. App screenshot to replace team photo on Builds card.
-- Professional hackathon photos.
+- ruthAI repo going public → add code/live link. App screenshot could replace the stage photo on the Builds card.
+- (Done: professional hackathon photos added.)
 - Cloudera acting co-lead metrics; Vibes beta/business-model milestones; capstone final outcome.
 - Resume: `Savanna_Morris_Resume.pdf` (1 page, Nov 2026; made from her Word file with LibreOffice,
   LinkedIn/GitHub/Portfolio links added). It calls TapIn "Stealth Startup". Linked from the Download Resume button.

@@ -146,7 +146,9 @@ footer span{color:var(--gold)}
 #builds .samples-grid{grid-template-columns:repeat(2,1fr)}
 #right-now .rn-grid{grid-template-columns:repeat(2,1fr)}
 .rn-links{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:20px}.rn-links .sample-btn{margin-top:0}
-.cs-shot{display:block;width:100%;height:auto;aspect-ratio:1200/560;object-fit:cover;object-position:center 30%;border:1px solid var(--rule);margin-bottom:28px}
+.cs-gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:28px}
+.cs-gallery img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border:1px solid var(--rule)}
+@media (max-width:700px){.cs-gallery{grid-template-columns:1fr}}
 .build-shot{display:block;width:100%;height:auto;aspect-ratio:1200/609;object-fit:cover;border:1px solid var(--rule)}
 .cs-card{background:var(--paper);border:1px solid var(--rule);padding:48px clamp(24px,5vw,56px);margin-top:32px;display:flex;flex-direction:column}
 .cs-title{font-family:'Playfair Display',serif;font-size:clamp(22px,2.4vw,30px);font-weight:700;color:var(--ink);line-height:1.2;margin-bottom:32px}
@@ -383,7 +385,7 @@ footer span{color:var(--gold)}
   <div class="samples-grid">
 
     <div class="sample-card">
-      <img class="build-shot" src="finch-team.jpg" alt="Savanna and her five teammates on stage at the RuthAI and Google AI for Social Good hackathon" loading="lazy" width="1200" height="848" style="object-position:center 35%"/>
+      <img class="build-shot" src="sparrow-stage.jpg" alt="The Sparrow team pitching on stage at the RuthAI and Google AI for Social Good hackathon, with the Sparrow landing page on screen" loading="lazy" width="1200" height="800" style="object-position:center 40%"/>
       <div class="sample-header"><div>
         <div class="sample-co">Hackathon · 2nd place · Built in 6 hours</div>
         <div class="sample-title">Sparrow</div>
@@ -457,7 +459,10 @@ footer span{color:var(--gold)}
       <div class="sample-co">RuthAI &amp; Google AI for Social Good Hackathon · Google, Playa Vista · November 2026</div>
       <div class="cs-title">Sparrow: 6 hours from a blank repo to a 2nd-place AI product</div>
     </div>
-    <img class="cs-shot" src="finch-reception.jpg" alt="Hackathon participants photographed in front of the AI for Social Good backdrop at the reception" loading="lazy" width="1200" height="835"/>
+    <div class="cs-gallery">
+      <img src="sparrow-group.jpg" alt="Group photo in front of the AI for Social Good backdrop at the hackathon reception" loading="lazy" width="1200" height="800"/>
+      <img src="sparrow-audience.jpg" alt="A full room watching a team pitch to the judges at Google's Playa Vista office" loading="lazy" width="1200" height="800"/>
+    </div>
     <div class="cs-cols">
       <div>
         <div class="cs-label">The challenge</div>
