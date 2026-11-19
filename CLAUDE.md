@@ -47,7 +47,7 @@ Read this before editing. Keep it updated when facts change.
 
 ### TapIn — her own company (NOT Vibes)
 - Founder. Consumer career platform. Selected for the **inaugural cohort of the Waves Innovation
-  Accelerator — one of 8–10 chosen from 100+ applicants**.
+  Accelerator — one of 10 startups chosen from 100+ applicants**.
 - Validating demand via customer interviews with college seniors; testing core mechanic with an
   AI-assisted workflow. Site: venture block under Vibes + Right Now card.
 
@@ -77,7 +77,7 @@ Don't name teammates on the site.
   pricing, coordinated logistics, delegated roles, adapted through 30 mph winds.
 - Still co-managing a major annual event (13% of Campus Life budget) — ask for results when done.
 
-### Cloudera — Acting Lead, Internal Communications (Oct 2026 – Feb 2027)
+### Cloudera — Acting Co-Lead, Internal Communications (Oct 2026 – Feb 2027)
 - Site version condensed to 4 bullets (five launches, newsletters/templates, Cloudera Conversations,
   EVOLVE reporting + partner spotlights + impact report). Wanted: a real metric (e.g., open rates).
 
@@ -88,6 +88,6 @@ Don't name teammates on the site.
 - Session 3 attendance + student quotes; Career Center testimonial.
 - ruthAI repo going public → add code/live link. App screenshot to replace team photo on Builds card.
 - Professional hackathon photos.
-- Cloudera acting-lead metrics; Vibes beta/business-model milestones; capstone final outcome.
-- Resume PDF (`Savanna_Morris_Resume_EnterpriseAI_Master.pdf`) should be updated to match the site
-  (Sparrow, TapIn/accelerator, workshop, SPB event, speaking).
+- Cloudera acting co-lead metrics; Vibes beta/business-model milestones; capstone final outcome.
+- Resume: `Savanna_Morris_Resume.pdf` (1 page, Nov 2026; made from her Word file with LibreOffice,
+  LinkedIn/GitHub/Portfolio links added). It calls TapIn "Stealth Startup". Linked from the Download Resume button.
